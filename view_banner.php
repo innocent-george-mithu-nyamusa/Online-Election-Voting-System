@@ -17,7 +17,7 @@
     <a style="color:white; font-weight:bold; font-size:30px;">Src Fingreprint Voting System</a>
 
     <nav class="nav-menue">
-        <ul style="">
+        <ul>
             <li>
                 <a href="index.php">Home</a>
             </li>
