@@ -16,7 +16,7 @@
 				</div>
 				<div class="panel-body" style="background-color:none; display:block;">
 					<?php
-					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'president'") or die(mysqli_errno());
+					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'president'") or die(mysqli_errno($conn->error));
 					while ($fetch = $query->fetch_array()) {
 					?>
 						<div id="position">

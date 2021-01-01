@@ -17,14 +17,18 @@
     <a style="color:white; font-weight:bold; font-size:30px;">Src Fingreprint Voting System</a>
 
     <nav class="nav-menue">
-        <ul style="color">
+        <ul style="">
             <li>
                 <a href="index.php">Home</a>
             </li>
             <li><a href="candidate_path.php">Candidates</a></li>
             <li> <a href="register/index.php">Register</a></li>
             <li><a href="voters.php">Voter List</a></li>
-            <li><a href="login.php">Login</a></li>
+            <?php if (isset($_SESSION["voters_id"])) { ?>
+                <li><a href="logout.php">Logout</a></li>
+            <?php } else { ?>
+                <li><a href="login.php">Login</a></li>
+            <?php } ?>
         </ul>
     </nav>
 

@@ -36,20 +36,20 @@
     </div>
     <center>
         <div class="col-lg-8" style="margin-left:25%; margin-right:25%;">
-            <div class="alert alert-info">
+            <div class="alert alert-success">
                 <div class="panel-heading">
-                    <center>President</center>
+                    <center>Chairman</center>
                 </div>
                 <br />
                 <?php
-                if (!$_SESSION['pm_id']) {
+                if (!$_SESSION['cm_id']) {
                 } else {
-                    $fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[pm_id]'")->fetch_array();
-
+                    $fetch = $conn->query("SELECT * FROM `candidate` WHERE `candidate_id` = '$_SESSION[ch_id]'")->fetch_array();
                     echo $fetch['firstname'] . " " . $fetch['lastname'] . " " . "<img src = 'admin/" . $fetch['img'] . "' style = 'height:80px; width:80px; border-radius:500px;' />";
                 }
                 ?>
             </div>
+
             <br />
         </div>
     </center>
@@ -61,8 +61,8 @@
 
     <div class="modal-footer">
         <center>
-            <a href="pm_submit_vote.php"><button type="submit" class="btn btn-success"><i class="icon-check"></i>&nbsp;Yes</button></a>
-            <a href="pm_vote.php"><button class="btn btn-danger" aria-hidden="true"><i class="icon-remove icon-large"></i>&nbsp;Back</button></a>
+            <a href="chairman_submit_vote.php"><button type="submit" class="btn btn-success"><i class="icon-check"></i>&nbsp;Yes</button></a>
+            <a href="chairman_vote.php"><button class="btn btn-danger" aria-hidden="true"><i class="icon-remove icon-large"></i>&nbsp;Back</button></a>
         </center>
     </div>
     <!-- /.modal-content -->

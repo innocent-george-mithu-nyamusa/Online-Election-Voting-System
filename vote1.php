@@ -13,21 +13,33 @@
                 <center>
                     <select onchange="page(this.value)">
                         <option disabled selected>Select Candidate Group</option>
-                        <option value="pm_vote.php" name="pm">
-                            President
-                        </option>
-                        <option value="finance.php" name="pm">
-                            Finance Director
-                        </option>
-                        <option value="chairman.php" name="pm">
-                            Chairman
-                        </option>
-                        <option value="cm_vote.php">
-                            Secretary General
-                        </option>
-                        <option value="mla_vote.php">
-                            Secretary
-                        </option>
+                        <?php if (!isset($_SESSION["pm_id"])) { ?>
+                            <option value="pm_vote.php" name="pm">
+                                President
+                            </option>
+                        <?php } ?>
+                        <?php if (!isset($_SESSION["cm_id"])) { ?>
+                            <option value="finance.php" name="pm">
+                                Finance Director
+                            </option>
+                        <?php } ?>
+
+                        <?php if (!isset($_SESSION["ch_id"])) { ?>
+                            <option value="chairman.php" name="pm">
+                                Chairman
+                            </option>
+                        <?php } ?>
+
+                        <?php if (!isset($_SESSION["cm_id"])) { ?>
+                            <option value="cm_vote.php">
+                                Secretary General
+                            </option>
+                        <?php } ?>
+                        <?php if (!isset($_SESSION["cm_id"])) { ?>
+                            <option value="mla_vote.php">
+                                Secretary
+                            </option>
+                        <?php } ?>
                     </select>
                 </center>
 
