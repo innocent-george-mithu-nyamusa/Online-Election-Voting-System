@@ -1,6 +1,6 @@
 
 <footer class="footer center">
-	<hr/>
+<hr/>
 &copy 2022.
 <br/>
 Online Voting System.

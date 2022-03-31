@@ -11,13 +11,14 @@
         <div id="page-wrapper">
 
     <heading class="voters_heading">
-        <center><h1>Registered Prime Minister Candidates</h1>
+            <center>
+            <h1>Registered Prime Minister Candidates</h1>
              <center>
                 <select onchange = "page(this.value)">
-                <option disabled selected>Select Candidate Group</option>
-                <option disabled selected>Prime Minister</option>
-                <option value = "cm.php">Chief Minister</option>
-                <option value = "mla.php">MLA</option>
+                    <option disabled selected>Select Candidate Group</option>
+                    <option disabled selected>Prime Minister</option>
+                    <option value = "cm.php">Chief Minister</option>
+                    <option value = "mla.php">MLA</option>
                 </select>
             </center>
 
