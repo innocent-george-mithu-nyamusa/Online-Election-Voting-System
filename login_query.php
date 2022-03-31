@@ -17,7 +17,7 @@
             header('location:vote1.php');
 
 		}
-		
+	
 
 		if($voted == 1){
 			?>
