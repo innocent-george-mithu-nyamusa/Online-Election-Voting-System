@@ -1,7 +1,7 @@
 
-<footer class="footer">
+<footer class="footer center">
 	<hr/>
-&copy2021.
+&copy 2022.
 <br/>
 Online Voting System.
 </footer>
