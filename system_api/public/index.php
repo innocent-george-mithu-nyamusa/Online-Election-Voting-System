@@ -8,14 +8,12 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-$app->get('/hello/{name}', function (Request $request, Response $response){
-    $name = $request->getAttribute('name');
-    $response->getBody()->write("Hello, $name");
-    
+$app->get('/', function (Request $request, Response $response, $args) {
+    $response->getBody()->write("Hello world!");
     return $response;
 });
 
 //Students Routes
-require $_SERVER["DOCUMENT_ROOT"].'/voters/system_api/src/routes/students.php';
+// require $_SERVER["DOCUMENT_ROOT"].'/voters/system_api/src/routes/students.php';
 
 $app->run();
