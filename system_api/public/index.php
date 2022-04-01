@@ -1,4 +1,5 @@
 <?php
+
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
@@ -17,4 +18,3 @@ $app->get('/hello/{name}', function (Request $request, Response $response){
 // require $_SERVER["DOCUMENT_ROOT"].'/voters/system_api/src/routes/students.php';
 
 $app->run();
-?>

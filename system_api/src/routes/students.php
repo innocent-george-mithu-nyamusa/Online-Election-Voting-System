@@ -105,4 +105,4 @@ function getFingerprint(){
 //         echo '{"error": {"text": '.$e->getMessage().'}';
 //     }
 // });
-?>
+// ?>
