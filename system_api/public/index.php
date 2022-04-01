@@ -1,13 +1,12 @@
 <?php
 
-use \Psr\Http\Message\ServerRequestInterface as Request;
-use \Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
 
-require ($_SERVER["DOCUMENT_ROOT"].'/voters/system_api/vendor/autoload.php');
 
-$app = new \Slim\App([
-    'addContentLengthHeader' => true
-]);
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = Slim\Factory\AppFactory::create();
 
 $app->get('/hello/{name}', function (Request $request, Response $response){
     $name = $request->getAttribute('name');
