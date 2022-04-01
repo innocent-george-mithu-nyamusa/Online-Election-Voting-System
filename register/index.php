@@ -1,7 +1,10 @@
 
-<?php include ('head.php');?>
-<body>
+<?php include ('head.php');
+	include ("../system_api/public/index.php");
 
+?>
+<body>
+	
     <div id="wrapper">
     	<?php    
         include ('index_banner.php');
@@ -17,7 +20,7 @@
                          <form method = "post" enctype = "multipart/form-data">
                          	
                                 <div class="form-heading">
-                         		<center>Voter Registeration</center>
+                         		<center>Voter Registration</center>
                          		</div>
 											<div class="form-field">
 												<label>Voter ID</label><br/>
@@ -29,6 +32,7 @@
 												<label>Password</label><br/>
 													<input class="form-control"  type = "password" name = "password" id = "pass" placeholder="Password" required="true"/>
 											</div>
+
 											<div class="form-field">											
 												<label>Retype Password</label><br/>
 													<input class="form-control"  type = "password" name = "password1" id = "pass" placeholder="Retype Password" required="true"/>
@@ -59,15 +63,26 @@
 											</div>
 
 
-												<br/>					
-											 	 <center><button name = "save" type="submit">Create My Account</button></center>
+												<br/>			
+												<script>
+													setInterval(function(){
+														<?php
+															if(getFingerprint() !== ''){
+																
+																echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
+															}else {
+																echo '<center><button disabled="true" >Waiting to</button></center>';
+															}
+															
+															?>
+													}, 1000)
+												</script>		
+											 	
                                             <div class="link">
 											 	 <h2><center><a href="../login.php" style = "font-size:16px;">Login to vote</a></center></h2>
 											</div><br><br>
 
 						  				 </div>
-                                       
-										
 										</form>
 								
 							<?php //PHP script to insert signup data into database

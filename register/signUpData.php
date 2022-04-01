@@ -11,17 +11,6 @@
 			$password1 = $_POST['password1'];
 			$date = date("Y-m-d H:i:s");
 
-			$query = $conn->query("SELECT * FROM ids WHERE id_number='$id_number'") or die ($conn->error);
-			$count = $query->fetch_array();
-	if ($count  < 1){
-?>
-	<script>
-			alert( 'Invalid Voter ID');
-			window.location='index.php';
-	</script>		
-<?php
-	}
-	else{
 		
 		$query = $conn->query("SELECT * FROM voters WHERE id_number='$id_number'") or die ($conn->error);
 		$count1 = $query->fetch_array();
@@ -52,8 +41,6 @@
             <?php
 		}
 		
-
-	}
 } 
 ?>
 
