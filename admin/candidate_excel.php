@@ -5,7 +5,7 @@ $password = "";
 $dbname = "vote";
 //mysql and db connection
 
-$con = new mysqli($servername, $username, $password, $dbname);
+$con = new mysqli('localhost', 'u271646766_voters', 'Coollifestyle@1', 'u271646766_voters');
 
 if ($con->connect_error) {  //error check
     die("Connection failed: " . $con->connect_error);

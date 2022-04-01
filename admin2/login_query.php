@@ -8,7 +8,7 @@
 		$login_id = $_POST['login_id'];
 	
 		
-		$query = $conn->query("SELECT * FROM users WHERE username = 	'$username' AND password = '$password' AND user_id = '$login_id' ") or die($conn->error);
+		$query = $conn->query("SELECT * FROM users WHERE username = '$username' AND password = '$password' AND user_id = '$login_id' ") or die($conn->error);
 		$rows = $query->num_rows;
 		$fetch = $query->fetch_array();
 																		
