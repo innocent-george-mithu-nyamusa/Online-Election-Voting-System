@@ -1,5 +1,7 @@
 <?php
 	require_once 'dbcon.php';
+
+	echo "edited stuff";
 	
 	if(isset($_POST['login']))
 	{
@@ -23,6 +25,7 @@
 					} 
 				else if ($rows > 0)
 					{
+						echo "edited stuff";
 					$conn->query("INSERT INTO  logins(username) VALUES(' $username');") or die($conn->error);//Inserts username for tracking logs..security feature
 						
 						?>
