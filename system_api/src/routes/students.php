@@ -1,14 +1,15 @@
 <?php
 
-use \Psr\Http\Message\ServerRequestInterface as Request;
-use \Psr\Http\Message\ResponseInterface as Response;
 
-$app = new \Slim\App([
-    'settings' => [
-        'addContentLengthHeader' => true
-    ]
-]);
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
+use Slim\Factory\AppFactory;
 
+require __DIR__ . '/../vendor/autoload.php';
+
+$app = AppFactory::create();$app = AppFactory::create();
+
+$fingreprint;
 
 //Add Temp Data
 $app->get('/api/{id}', function(Request $request, Response $response){
@@ -18,10 +19,6 @@ $app->get('/api/{id}', function(Request $request, Response $response){
     echo $fingreprint;
     
 });
-
-
-
-$fingreprint;
 
 
 function setFingprint(string $fingerprint){

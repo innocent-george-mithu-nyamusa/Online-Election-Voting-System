@@ -8,8 +8,10 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-$app->get('/', function (Request $request, Response $response, $args) {
-    $response->getBody()->write("Hello world!");
+$app->get('/hello/{name}', function (Request $request, Response $response){
+    $name = $request->getAttribute('name');
+    $response->getBody()->write("Hello, $name");
+    
     return $response;
 });
 
