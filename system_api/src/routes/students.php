@@ -1,8 +1,20 @@
 <?php
+
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
 $app = new \Slim\App;
+
+
+//Add Temp Data
+$app->get('/api/{id}', function(Request $request, Response $response){
+    $id = $request->getAttribute('id');
+    $fingreprint = htmlspecialchars($id);
+    
+    echo $fingreprint;
+});
+
+
 
 $fingreprint;
 
@@ -12,15 +24,6 @@ function setFingprint(string $fingerprint){
 
     $fingreprint = $fingerprint;
 }
-//Add Temp Data
-$app->get('/api/{id}', function(Request $request, Response $response){
-    $id = $request->getAttribute('id');
-    $fingreprint = htmlspecialchars($id);
-    
-    
-    echo $fingreprint;
-});
-
 
 function getFingerprint(){
     global $fingreprint;
