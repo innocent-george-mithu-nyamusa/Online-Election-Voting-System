@@ -3,7 +3,11 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-$app = new \Slim\App;
+$app = new \Slim\App([
+    'settings' => [
+        'addContentLengthHeader' => true
+    ]
+]);
 
 
 //Add Temp Data
