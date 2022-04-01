@@ -10,7 +10,6 @@
 		$voted = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '".md5($password)."' && `status` = 'Voted'")->num_rows;
 		$numberOfRows = $result->num_rows;				
 		
-		print_r($numberOfRows);
 		if ($numberOfRows > 0){
 			session_start();
 			$_SESSION['voters_id'] = $row['voters_id'];
