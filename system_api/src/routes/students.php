@@ -12,6 +12,7 @@ $app->get('/api/{id}', function(Request $request, Response $response){
     $fingreprint = htmlspecialchars($id);
     
     echo $fingreprint;
+    
 });
 
 
