@@ -10,7 +10,7 @@
 <?php 
 	}
 		$session_id=$_SESSION['id'];
-		$user_query = $conn->query("SELECT * FROM users WHERE user_id = '$session_id'") or die(mysqli_errno());
+		$user_query = $conn->query("SELECT * FROM users WHERE user_id = '$session_id'") or die(mysqli_errno($conn));
 		$user_row = $user_query->fetch_array();
 		$user_username = $user_row['firstname']." ".$user_row['lastname'];
 ?>
