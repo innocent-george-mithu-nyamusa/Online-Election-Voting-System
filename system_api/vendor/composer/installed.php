@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '93fda0136781638f6eba6010124296a1dd3611d6',
+        'reference' => '20ca3c8aae648e7dbd637eefd0b17f003ac0e78c',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '93fda0136781638f6eba6010124296a1dd3611d6',
+            'reference' => '20ca3c8aae648e7dbd637eefd0b17f003ac0e78c',
             'dev_requirement' => false,
         ),
         'fig/http-message-util' => array(
@@ -110,6 +110,15 @@
             'install_path' => __DIR__ . '/../ralouphie/getallheaders',
             'aliases' => array(),
             'reference' => '120b605dfeb996808c31b6477290a714d356e822',
+            'dev_requirement' => false,
+        ),
+        'slim/http' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../slim/http',
+            'aliases' => array(),
+            'reference' => '3bc9d61b5243cab0d75c89d778bd69464de07354',
             'dev_requirement' => false,
         ),
         'slim/psr7' => array(
