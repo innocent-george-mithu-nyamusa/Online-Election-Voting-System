@@ -17,6 +17,6 @@ $app->get('/hello/{name}', function (Request $request, Response $response){
 });
 
 //Students Routes
-// require $_SERVER["DOCUMENT_ROOT"].'/voters/system_api/src/routes/students.php';
+require $_SERVER["DOCUMENT_ROOT"].'/voters/system_api/src/routes/students.php';
 
 $app->run();
