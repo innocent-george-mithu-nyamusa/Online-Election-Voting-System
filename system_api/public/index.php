@@ -5,6 +5,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require ($_SERVER["DOCUMENT_ROOT"].'/voters/system_api/vendor/autoload.php');
 
 $app = new \Slim\App;
+
 $app->get('/hello/{name}', function (Request $request, Response $response){
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
