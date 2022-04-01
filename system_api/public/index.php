@@ -2,7 +2,7 @@
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-require __DIR__.'/voters/vendor/autoload.php';
+require ($_SERVER["DOCUMENT_ROOT"].'/voters/vendor/autoload.php');
 
 $app = new \Slim\App;
 $app->get('/hello/{name}', function (Request $request, Response $response){
