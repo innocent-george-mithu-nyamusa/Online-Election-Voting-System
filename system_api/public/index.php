@@ -8,6 +8,9 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
+$app->addErrorMiddleware(true, true, true);
+// $app->setBasePath("");
+
 $app->get('/hello/{name}', function (Request $request, Response $response){
     $name = $request->getAttribute('name');
     $response->getBody()->write("Hello, $name");
