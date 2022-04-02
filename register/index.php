@@ -75,7 +75,7 @@
 															}
 															
 															?>
-													}, 1000)
+													}, 10000)
 												</script>		
 											 	
 												 <!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
