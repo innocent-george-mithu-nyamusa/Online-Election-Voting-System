@@ -64,6 +64,7 @@
 
 
 												<br/>			
+												<?php echo $fingeprint; ?>
 												<script>
 													setInterval(function(){
 														<?php
