@@ -1,13 +1,11 @@
 <?php
-
 /**
- * Slim Framework (https://slimframework.com)
+ * Slim Framework (http://slimframework.com)
  *
- * @license https://github.com/slimphp/Slim/blob/4.x/LICENSE.md (MIT License)
+ * @link      https://github.com/slimphp/Slim
+ * @copyright Copyright (c) 2011-2015 Josh Lockhart
+ * @license   https://github.com/slimphp/Slim/blob/3.x/LICENSE.md (MIT License)
  */
-
-declare(strict_types=1);
-
 namespace Slim\Handlers\Strategies;
 
 use Psr\Http\Message\ResponseInterface;
@@ -23,23 +21,23 @@ class RequestResponse implements InvocationStrategyInterface
      * Invoke a route callable with request, response, and all route parameters
      * as an array of arguments.
      *
-     * @param callable               $callable
+     * @param array|callable         $callable
      * @param ServerRequestInterface $request
      * @param ResponseInterface      $response
-     * @param array<string, string>  $routeArguments
+     * @param array                  $routeArguments
      *
-     * @return ResponseInterface
+     * @return mixed
      */
     public function __invoke(
         callable $callable,
         ServerRequestInterface $request,
         ResponseInterface $response,
         array $routeArguments
-    ): ResponseInterface {
+    ) {
         foreach ($routeArguments as $k => $v) {
             $request = $request->withAttribute($k, $v);
         }
 
-        return $callable($request, $response, $routeArguments);
+        return call_user_func($callable, $request, $response, $routeArguments);
     }
 }

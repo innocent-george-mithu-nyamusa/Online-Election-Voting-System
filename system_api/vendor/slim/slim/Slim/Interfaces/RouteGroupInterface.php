@@ -1,53 +1,46 @@
 <?php
-
 /**
- * Slim Framework (https://slimframework.com)
+ * Slim Framework (http://slimframework.com)
  *
- * @license https://github.com/slimphp/Slim/blob/4.x/LICENSE.md (MIT License)
+ * @link      https://github.com/slimphp/Slim
+ * @copyright Copyright (c) 2011-2015 Josh Lockhart
+ * @license   https://github.com/slimphp/Slim/blob/3.x/LICENSE.md (MIT License)
  */
-
-declare(strict_types=1);
-
 namespace Slim\Interfaces;
 
-use Psr\Http\Server\MiddlewareInterface;
-use Slim\MiddlewareDispatcher;
+use Slim\App;
 
+/**
+ * RouteGroup Interface
+ *
+ * @package Slim
+ * @since   3.0.0
+ */
 interface RouteGroupInterface
 {
     /**
-     * @return RouteGroupInterface
-     */
-    public function collectRoutes(): RouteGroupInterface;
-
-    /**
-     * Add middleware to the route group
-     *
-     * @param MiddlewareInterface|string|callable $middleware
-     * @return RouteGroupInterface
-     */
-    public function add($middleware): RouteGroupInterface;
-
-    /**
-     * Add middleware to the route group
-     *
-     * @param MiddlewareInterface $middleware
-     * @return RouteGroupInterface
-     */
-    public function addMiddleware(MiddlewareInterface $middleware): RouteGroupInterface;
-
-    /**
-     * Append the group's middleware to the MiddlewareDispatcher
-     *
-     * @param MiddlewareDispatcher $dispatcher
-     * @return RouteGroupInterface
-     */
-    public function appendMiddlewareToDispatcher(MiddlewareDispatcher $dispatcher): RouteGroupInterface;
-
-    /**
-     * Get the RouteGroup's pattern
+     * Get route pattern
      *
      * @return string
      */
-    public function getPattern(): string;
+    public function getPattern();
+
+    /**
+     * Prepend middleware to the group middleware collection
+     *
+     * @param mixed $callable The callback routine
+     *
+     * @return RouteGroupInterface
+     */
+    public function add($callable);
+
+    /**
+     * Execute route group callable in the context of the Slim App
+     *
+     * This method invokes the route group object's callable, collecting
+     * nested route objects
+     *
+     * @param App $app
+     */
+    public function __invoke(App $app);
 }

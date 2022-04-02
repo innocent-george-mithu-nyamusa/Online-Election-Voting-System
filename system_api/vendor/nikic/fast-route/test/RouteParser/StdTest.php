@@ -2,28 +2,22 @@
 
 namespace FastRoute\RouteParser;
 
-use PHPUnit\Framework\TestCase;
-
-class StdTest extends TestCase
-{
+class StdTest extends \PhpUnit_Framework_TestCase {
     /** @dataProvider provideTestParse */
-    public function testParse($routeString, $expectedRouteDatas)
-    {
+    public function testParse($routeString, $expectedRouteDatas) {
         $parser = new Std();
         $routeDatas = $parser->parse($routeString);
         $this->assertSame($expectedRouteDatas, $routeDatas);
     }
 
     /** @dataProvider provideTestParseError */
-    public function testParseError($routeString, $expectedExceptionMessage)
-    {
+    public function testParseError($routeString, $expectedExceptionMessage) {
         $parser = new Std();
         $this->setExpectedException('FastRoute\\BadRouteException', $expectedExceptionMessage);
         $parser->parse($routeString);
     }
 
-    public function provideTestParse()
-    {
+    public function provideTestParse() {
         return [
             [
                 '/test',
@@ -90,36 +84,10 @@ class StdTest extends TestCase
                     ['/test/', ['name', '[^/]+'], '/', ['id', '[0-9]+']],
                 ]
             ],
-            [
-                '',
-                [
-                    [''],
-                ]
-            ],
-            [
-                '[test]',
-                [
-                    [''],
-                    ['test'],
-                ]
-            ],
-            [
-                '/{foo-bar}',
-                [
-                    ['/', ['foo-bar', '[^/]+']]
-                ]
-            ],
-            [
-                '/{_foo:.*}',
-                [
-                    ['/', ['_foo', '.*']]
-                ]
-            ],
         ];
     }
 
-    public function provideTestParseError()
-    {
+    public function provideTestParseError() {
         return [
             [
                 '/test[opt',
@@ -135,19 +103,11 @@ class StdTest extends TestCase
             ],
             [
                 '/test[]',
-                'Empty optional part'
+                "Empty optional part"
             ],
             [
                 '/test[[opt]]',
-                'Empty optional part'
-            ],
-            [
-                '[[test]]',
-                'Empty optional part'
-            ],
-            [
-                '/test[/opt]/required',
-                'Optional segments can only occur at the end of a route'
+                "Empty optional part"
             ],
         ];
     }
