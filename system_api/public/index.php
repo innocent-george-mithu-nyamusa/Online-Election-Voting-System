@@ -11,11 +11,8 @@ $app->get('/api/{id}', function (Request $request, Response $response){
     $response->getBody()->write("Hello, $finger");
     
     return $response;
-    
 });
-
-
-
+ 
 //Students Routes
 // require '../src/routes/students.php';
 $app->run();
