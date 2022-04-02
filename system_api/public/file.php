@@ -1,6 +1,6 @@
 <?php 
 
-$fingeprint = "New Stuff";
+$fingeprint;
 
 function getFingerprint(){
     global $fingeprint;
