@@ -40,6 +40,8 @@ $app->get('/api/{id}', function(Request $request, Response $response){
     
 
     setFingerprint($fingreprint);
+
+    return $response;
 });
 
 
