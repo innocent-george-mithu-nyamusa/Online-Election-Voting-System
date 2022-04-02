@@ -1,6 +1,6 @@
 
 <?php include ('head.php');
-	include ("../system_api/public/index.php/qpi/23");
+	include ("../system_api/public/file.php");
 
 ?>
 <body>
