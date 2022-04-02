@@ -9,10 +9,12 @@ $app = new \Slim\App;
 $app->get('/api/{id}', function (Request $request, Response $response){
     $finger = $request->getAttribute('id');
     $response->getBody()->write("Hello, $finger");
+    print_r($finger);
     
     return $response;
 });
  
+
 //Students Routes
 // require '../src/routes/students.php';
 $app->run();
