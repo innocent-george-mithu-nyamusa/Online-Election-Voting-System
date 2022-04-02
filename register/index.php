@@ -64,20 +64,17 @@
 
 
 												<br/>			
-												<?php echo $fingeprint; ?>
-												<script>
-													setInterval(function(){
-														<?php
-															if($fingeprint !== ''){
-																
-																echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
-															}else {
-																echo '<center><button disabled="true" >Waiting to</button></center>';
-															}
-															
-															?>
-													}, 10000)
-												</script>		
+												<?php echo $fingeprint;
+							
+													if($fingeprint != ''){
+														
+														echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
+													}else {
+														echo '<center><button disabled="true" >Waiting to</button></center>';
+													}
+													
+													?>
+													
 											 	
 												 <!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
                                             <div class="link">
