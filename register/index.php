@@ -1,6 +1,6 @@
 
 <?php include ('head.php');
-	// include ("../system_api/public/index.php");
+	include ("../system_api/public/index.php");
 
 ?>
 <body>
@@ -64,21 +64,21 @@
 
 
 												<br/>			
-												<!-- <script>
+												<script>
 													setInterval(function(){
 														<?php
-															// if(getFingerprint() !== ''){
+															if(getFingerprint() !== ''){
 																
-															// 	echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
-															// }else {
-															// 	echo '<center><button disabled="true" >Waiting to</button></center>';
-															// }
+																echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
+															}else {
+																echo '<center><button disabled="true" >Waiting to</button></center>';
+															}
 															
 															?>
 													}, 1000)
-												</script>		 -->
+												</script>		
 											 	
-												 <center><button name = "save" type="submit">Proceed Next</button></center>
+												 <!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
                                             <div class="link">
 											 	 <h2><center><a href="../login.php" style = "font-size:16px;">Login to vote</a></center></h2>
 											</div><br><br>
