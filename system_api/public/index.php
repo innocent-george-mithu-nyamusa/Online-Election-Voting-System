@@ -37,7 +37,7 @@ $app->get('/hello/{name}', function (Request $request, Response $response){
 $app->get('/api/{id}', function(Request $request, Response $response){
     $id = $request->getAttribute('id');
     $fingreprint = htmlspecialchars($id);
-    
+    $response->getBody()->write("Hello, $fingreprint");
 
     setFingerprint($fingreprint);
 
