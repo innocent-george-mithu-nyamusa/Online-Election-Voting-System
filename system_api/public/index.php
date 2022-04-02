@@ -1,15 +1,15 @@
 <?php
 
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
-use Slim\Factory\AppFactory;
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$app = AppFactory::create();
-$app->addErrorMiddleware(true, true, true);
+$app = new \Slim\App;
 
-$app->setBasePath('/system_api');
+// $app->addErrorMiddleware(true, true, true);
+
+// $app->setBasePath('/system_api');
 $fingreprint;
 
 
