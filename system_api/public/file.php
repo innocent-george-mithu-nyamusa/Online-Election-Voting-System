@@ -4,6 +4,7 @@ $fingeprint;
 
 function getFingerprint(){
     global $fingeprint;
+    
     return $fingeprint;
 }
 
