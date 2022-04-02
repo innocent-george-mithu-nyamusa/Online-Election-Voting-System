@@ -68,7 +68,7 @@
 												<script>
 													setInterval(function(){
 														<?php
-															if(getFingerprint() !== ''){
+															if($fingeprint !== ''){
 																
 																echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
 															}else {
