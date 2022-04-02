@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '20ca3c8aae648e7dbd637eefd0b17f003ac0e78c',
+        'reference' => 'ff42eb0cd4b80ac9cb6472799d5333b29f6b54dd',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '20ca3c8aae648e7dbd637eefd0b17f003ac0e78c',
+            'reference' => 'ff42eb0cd4b80ac9cb6472799d5333b29f6b54dd',
             'dev_requirement' => false,
         ),
         'fig/http-message-util' => array(
