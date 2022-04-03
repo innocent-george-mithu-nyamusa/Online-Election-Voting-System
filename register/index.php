@@ -1,7 +1,6 @@
 
 <?php include ('head.php');
 	include ("../system_api/public/file.php");
-
 ?>
 <body>
 	
@@ -25,7 +24,6 @@
 											<div class="form-field">
 												<label>Voter ID</label><br/>
 												<input class ="form-control" type = "text" name = "id_number" placeholder = "Voter ID" required="true">
-													
 											</div>
 											
 											<div class="form-field">											
@@ -62,9 +60,8 @@
 													
 											</div>
 
-
 												<br/>			
-												<?php echo $fingeprint; ?>
+											
 												<script>
 													setInterval(function(){
 														<?php
