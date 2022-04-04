@@ -1,111 +1,128 @@
-
-<?php include ('head.php');
-	include ("../system_api/public/file.php");
+<?php include('head.php');
+include("../system_api/public/file.php");
+include("dbconn.php");
 ?>
+
 <body>
-	
-    <div id="wrapper">
-    	<?php    
-        include ('index_banner.php');
-        ?>
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="row">
-			
-					<div class="form-panel">
-                      
-                        <div class="form-body"> 
 
-                         <form method = "post" enctype = "multipart/form-data">
-                         	
-                                <div class="form-heading">
-                         		<center>Voter Registration</center>
-                         		</div>
-											<div class="form-field">
-												<label>Voter ID</label><br/>
-												<input class ="form-control" type = "text" name = "id_number" placeholder = "Voter ID" required="true">
-											</div>
-											
-											<div class="form-field">											
-												<label>Password</label><br/>
-													<input class="form-control"  type = "password" name = "password" id = "pass" placeholder="Password" required="true"/>
-											</div>
+	<div id="wrapper">
+		<?php
+		include('index_banner.php');
+		?>
+		<!-- Page Content -->
+		<div id="page-wrapper">
+			<div class="row">
 
-											<div class="form-field">											
-												<label>Retype Password</label><br/>
-													<input class="form-control"  type = "password" name = "password1" id = "pass" placeholder="Retype Password" required="true"/>
-											</div>
+				<div class="form-panel">
 
-											<div class="form-field">
-												<label>First Name</label><br/>
-													<input class="form-control" type ="text" name = "firstname" placeholder="First Name" required="true">
-											</div>
-											
-											<div class="form-field">
-												<label>Last Name</label><br/>
-													<input class="form-control"  type = "text" name = "lastname" placeholder="Last Name" required="true">
-											</div>
+					<div class="form-body">
 
-											<div class="form-field">
-												<label>Gender</label> <br/>
-													<select class = "form-control" name = "gender">
-														<option >Male</option>
-														<option >Female</option>														
-													</select>
-											</div>
-											
-											<div class="form-field">
-												<label>Enter Age</label> <br/>
-												    <input type="number" class="form-control" name="Age" placeholder="Enter Age">
-													
-											</div>
+						<form method="post" enctype="multipart/form-data">
 
-												<br/>			
-											
-												<script>
-													setInterval(function(){
-														<?php
-															if(getFingerprint() != ''){
-																
-																echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
-															}else {
-																echo '<center><button disabled="true" >Waiting to</button></center>';
-															}
-															
-															?>
-													}, 10000)
-												</script>		
-											 	
-												 <!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
-                                            <div class="link">
-											 	 <h2><center><a href="../login.php" style = "font-size:16px;">Login to vote</a></center></h2>
-											</div><br><br>
+							<div class="form-heading">
+								<center>Voter Registration</center>
+							</div>
+							<div class="form-field">
+								<label>Voter ID</label><br />
+								<input class="form-control" type="text" name="id_number" placeholder="Voter ID" required="true">
+							</div>
 
-						  				 </div>
-										</form>
-								
-							<?php //PHP script to insert signup data into database
-								require 'signUpData.php';
-								
-							?>
+							<div class="form-field">
+								<label>Password</label><br />
+								<input class="form-control" type="password" name="password" id="pass" placeholder="Password" required="true" />
+							</div>
 
-						</div>
-						    
+							<div class="form-field">
+								<label>Retype Password</label><br />
+								<input class="form-control" type="password" name="password1" id="pass" placeholder="Retype Password" required="true" />
+							</div>
+
+							<div class="form-field">
+								<label>First Name</label><br />
+								<input class="form-control" type="text" name="firstname" placeholder="First Name" required="true">
+							</div>
+
+							<div class="form-field">
+								<label>Last Name</label><br />
+								<input class="form-control" type="text" name="lastname" placeholder="Last Name" required="true">
+							</div>
+
+							<div class="form-field">
+								<label>Gender</label> <br />
+								<select class="form-control" name="gender">
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+							</div>
+
+							<div class="form-field">
+								<label>Enter Age</label> <br />
+								<input type="number" class="form-control" name="Age" placeholder="Enter Age">
+
+							</div>
+
+							<div class="form-field">
+								<label>Gender</label> <br />
+								<select class="form-control" name="faculty">
+									<?php
+									$selectQuery = "SELECT * FROM faculty";
+									$items = $conn->query($selectQuery);
+									foreach ($items as $item) {
+										echo "<option >" . $item["faculty_name"] . "</option>";
+									}
+									?>
+									<option>Male</option>
+									<option>Female</option>
+								</select>
+							</div>
+
+							<br />
+
+							<script>
+								setInterval(function() {
+									<?php
+									if (getRecentId() != '') {
+
+										echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
+									} else {
+										echo '<center><button disabled="true" >Waiting to</button></center>';
+									}
+
+									?>
+								}, 10000)
+							</script>
+
+							<!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
+							<div class="link">
+								<h2>
+									<center><a href="../login.php" style="font-size:16px;">Login to vote</a></center>
+								</h2>
+							</div><br><br>
+
+					</div>
 					</form>
-					
-                    </div>
-                </div>
-            
-            <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
-        <?php 
-        include ('footer.php');
-        ?>
 
-    </div>
-    <!-- /#wrapper -->
+					<?php //PHP script to insert signup data into database
+					require 'signUpData.php';
+
+					?>
+
+				</div>
+
+				</form>
+
+			</div>
+		</div>
+
+		<!-- /.row -->
+	</div>
+	<!-- /#page-wrapper -->
+	<?php
+	include('footer.php');
+	?>
+
+	</div>
+	<!-- /#wrapper -->
 </body>
 
 </html>
-
