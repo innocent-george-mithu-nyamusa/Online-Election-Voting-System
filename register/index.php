@@ -67,6 +67,7 @@ include("dbcon.php");
 								<label>Gender</label> <br />
 								<select class="form-control" name="faculty">
 									<?php
+
 									$selectQuery = "SELECT * FROM faculty";
 									$items = $conn->query($selectQuery);
 									foreach ($items as $item) {
