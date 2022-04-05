@@ -10,5 +10,5 @@ $allResults = $stmt->fetchAll(PDO::FETCH_ASSOC);
 if (isset($allResults[0]["temp_id"])) {
     echo $allResults[0]["temp_id"];
 } else {
-    // echo "null";
+    echo "null";
 }
