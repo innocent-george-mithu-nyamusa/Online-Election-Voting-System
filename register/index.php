@@ -70,11 +70,11 @@ include("dbcon.php");
 
 									$selectQuery = "SELECT * FROM faculty";
 									$items = $conn->query($selectQuery);
-									foreach ($items as $item) {
+									while ($row = $items->fetch_array()) {
 										echo "<option >" . $item["faculty_name"] . "</option>";
 									}
 									?>
-								
+
 								</select>
 							</div>
 
