@@ -72,8 +72,6 @@ include("dbcon.php");
 									$getQueryStmt->execute();
 									$allItems = $getQueryStmt->fetchAll(PDO::FETCH_ASSOC);
 
-									print_r($allItems);
-
 									foreach ($allItems as $item) { ?>
 
 										<option> <?php echo $item["faculty_name"]; ?> </option>
