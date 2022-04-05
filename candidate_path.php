@@ -23,7 +23,7 @@ $pdo = $db->connect();
                     <select onchange="page(this.value)">
                         <option disabled selected>Select Candidate Group</option>
                         <?php
-                        $stmt = $pdo->prepare("SELECT * FROM candidate WHERE position is UNIQUE");
+                        $stmt = $pdo->prepare("SELECT DISTINCT position FROM candidate ");
                         $stmt->execute();
                         $allValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
