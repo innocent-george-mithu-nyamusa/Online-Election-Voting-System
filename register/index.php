@@ -87,7 +87,7 @@ include("dbcon.php");
 							<script>
 								setInterval(function() {
 									document.getElementById("id_number").value = <?php
-																					echo getRecentId();
+																					echo "value å" . getRecentId();
 																					?>
 									<?php
 									if (getRecentId() != '') {
