@@ -2,7 +2,7 @@
 class db
 {
     //Properties
-    private $dbhost = "127.0.0.1";
+    private $dbhost = "localhost";
     private $dbuser = "u271646766_voters";
     private $dbpass = "Coollifestyle@1";
     private $dbname = "u271646766_voters";
