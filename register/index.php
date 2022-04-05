@@ -74,8 +74,7 @@ include("dbcon.php");
 										echo "<option >" . $item["faculty_name"] . "</option>";
 									}
 									?>
-									<option>Male</option>
-									<option>Female</option>
+								
 								</select>
 							</div>
 
