@@ -26,7 +26,7 @@ include("dbcon.php");
 							</div>
 							<div class="form-field">
 								<label>Voter ID</label><br />
-								<input class="form-control" type="text" name="id_number" id="id_number" placeholder="Voter ID" required="true" readonly>
+								<input class="form-control" type="text" name="id_number" id="id_number" required="true" readonly>
 							</div>
 
 							<div class="form-field">
