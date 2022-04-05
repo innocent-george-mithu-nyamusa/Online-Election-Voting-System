@@ -7,8 +7,8 @@ $(document).ready(function() {
     proceed.hide();
     noproceed.show();
 
-    setInterval(function() {
-
+    setInterval(
+        function() {
         $.ajax(
             {
                 url: "getfingerprint.php",
