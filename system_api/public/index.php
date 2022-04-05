@@ -16,7 +16,9 @@ $app->get('/api/{id}', function (Request $request, Response $response) {
     $response->getBody()->write("id is:, $finger");
 
     // setFingerprint($finger);
-    $pdo->prepare("INSERT INTO temp(temp_id) VALUES ('$finger')");
+    $stmt = $pdo->prepare("INSERT INTO temp(temp_id) VALUES ('$finger')");
+    $stmt->execute();
+
     return $response;
 });
 
