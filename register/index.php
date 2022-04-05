@@ -1,5 +1,5 @@
 <?php include('head.php');
-// include("../system_api/public/file.php");
+include(__DIR__ . "/../system_api/public/file.php");
 
 include("dbcon.php");
 
