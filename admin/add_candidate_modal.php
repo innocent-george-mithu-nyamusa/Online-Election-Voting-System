@@ -41,7 +41,7 @@
 							<option value="zinasu">Zinasu</option>
 						</select>
 					</div>
-					
+
 					<div class="form-group">
 						<label>Firstname</label>
 						<input class="form-control" type="text" name="firstname" placeholder="Please enter firstname" required="true">
