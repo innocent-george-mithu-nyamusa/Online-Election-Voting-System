@@ -7,8 +7,7 @@
      
     <center>
         <div class="voters_notice">
-            <p><strong><i>NOTE</i>:</strong> if you did not registered for online voting, your name will not appear on list below and
-            you can not vote using the online system.</p>
+            <p><strong><i>NOTE</i>:</strong> These Values Change .</p>
         </div>
         <strong><h3>Registered Voters List</h3></strong>
 
@@ -29,6 +28,7 @@
                                             <th>Account</th>
                                             <th>Status</th>
                                             <th>Date Registered</th>
+                                            
                                             
                                         </tr>
                                     </thead>

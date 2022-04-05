@@ -180,6 +180,17 @@
                                     <td style="width:20px; text-align:center"><button class="btn btn-primary" disabled><?php echo $fetch1['total']; ?></button> </td>
                                 <?php } ?>
                                 </tbody>
+                                <tfoot>
+                                    <?php
+
+                                    $winner = $conn->query("SELECT * FROM candidate WHERE MAX(SELECT COUNT(*) as total FROM votes)");
+                                    $fetch2 = $winner->fetch_assoc();
+                                    ?>
+                                    <td>
+                                        <?php echo "Current Winner Is: " . $fetch2["firstname"] . " " . $fetch2["lastname"]; ?>
+                                    </td>
+                                    <td><img src="<?php echo $fetch2['img']; ?>" style="width:40px; height:40px; border-radius:500px; ">
+                                </tfoot>
 
 
                         </table>

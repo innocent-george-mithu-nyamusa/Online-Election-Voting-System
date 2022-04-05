@@ -14,7 +14,6 @@
 			session_start();
 			$_SESSION['voters_id'] = $row['voters_id'];
             header('location:vote1.php');
-
 		}
 	
 
