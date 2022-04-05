@@ -18,7 +18,7 @@ $(document).ready(function() {
                     console.log("Failed to get fingrprint");
                 },
                 success: function (data) {
-                        console.log(data);
+                        
                         if(data != "null") {
                             $("#id_number").val(data);
                             proceed.show();
