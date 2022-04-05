@@ -84,23 +84,8 @@ include("dbcon.php");
 							</div>
 							<br />
 
-							<script>
-								setInterval(function() {
-									document.getElementById("id_number").value = <?php
-																					echo "value å" . getRecentId();
-																					?>
-									<?php
-									if (getRecentId() != '') {
-
-										echo '<center><button name = "save" type="submit" >Proceed Next</button></center>';
-									} else {
-
-										echo '<center><button disabled="true" >Waiting to</button></center>';
-									}
-									?>
-
-								}, 1000);
-							</script>
+							<center><button name="save" id="proceed" type="submit">Proceed Next</button></center>
+							<center><button id="noproceed" disabled="true">Waiting to</button></center>
 
 							<!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
 							<div class="link">
@@ -132,7 +117,11 @@ include("dbcon.php");
 	?>
 
 	</div>
+
 	<!-- /#wrapper -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/getFingerprint.js"></script>
 </body>
+
 
 </html>
