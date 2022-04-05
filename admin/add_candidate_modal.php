@@ -25,18 +25,23 @@
 
 							foreach ($allValues as $value) {
 							?>
-								<option><?php echo $value["position"] ?></option>
+								<option><?php echo $value["position"]; ?></option>
+
 							<?php
 							}
 							?>
 						</select>
 					</div>
 					<div class="form-group">
-						<label>Party Name</label>
-						<input class="form-control" type="text" name="party" placeholder="Please enter party name" required="true">
+						<select class="form-control" name="position">
+							<label>Party </label>
+							<option selected disabled>Select Candidate Party</option>
+							<option value="independent">Independent</option>
+							<option value="zicosu">Zicosu</option>
+							<option value="zinasu">Zinasu</option>
+						</select>
 					</div>
-
-
+					
 					<div class="form-group">
 						<label>Firstname</label>
 						<input class="form-control" type="text" name="firstname" placeholder="Please enter firstname" required="true">
