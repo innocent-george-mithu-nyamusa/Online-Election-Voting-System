@@ -31,11 +31,11 @@
 						<select class="form-control" name="faculty">
 							<option selected disabled>Select Candidate Faculty</option>
 							<?php
-							$stmt = $pdo->prepare("SELECT * FROM faculty");
-							$stmt->execute();
-							$allValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
+							require 'dbcon.php';
 
-							foreach ($allValues as $value) {
+							$stmt = $conn->query("SELECT * FROM faculty");
+
+							while ($alue = $stmt->fetch_array()) {
 							?>
 								<option value="<?php echo $value["faculty_id"]; ?>"><?php echo $value["faculty_name"]; ?></option>
 

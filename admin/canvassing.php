@@ -77,7 +77,7 @@
 
                         <table class="table table-striped table-bordered table-hover ">
                             <thead>
-                                <td style="width:600px;" class="alert alert-success">Candidate for Secretry General</td>
+                                <td style="width:600px;" class="alert alert-success">Candidate for Secretary General</td>
                                 <td style="width:200px;" class="alert alert-success">Image</td>
                                 <td class="alert alert-success">Total</td>
 
