@@ -47,8 +47,6 @@ include("../system_api/public/file.php");
                             <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-
-
                                         <th>Image</th>
                                         <th>Position</th>
                                         <th>Faculty</th>
@@ -72,7 +70,13 @@ include("../system_api/public/file.php");
                                         ?>
                                             <td width="50"><img src="<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
                                             <td><?php echo $row['position']; ?></td>
-                                            <td><?php echo $row['faculty']; ?></td>
+                                            <td>
+
+                                                <?php
+                                                $factQuery = $conn->query("SELECT faculty_name FROM faculty WHERE faculty_id={$row['faculty']}");
+                                                echo $factQuery->fetch_column();
+                                                ?>
+                                            </td>
                                             <td><?php echo $row['party']; ?></td>
                                             <td><?php echo $row['firstname']; ?></td>
                                             <td><?php echo $row['lastname']; ?></td>
