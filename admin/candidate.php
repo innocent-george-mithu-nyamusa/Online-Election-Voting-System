@@ -75,7 +75,7 @@ include("../system_api/public/file.php");
                                                 <?php
                                                 $factQuery = $conn->query("SELECT faculty_name FROM faculty WHERE faculty_id={$row['faculty']}");
                                                 $items = $factQuery->fetch_assoc();
-                                                echo $items[0]["faculty_name"];
+                                                echo $items["faculty_name"];
                                                 ?>
                                             </td>
                                             <td><?php echo $row['party']; ?></td>
