@@ -26,7 +26,7 @@ include("dbcon.php");
 							</div>
 							<div class="form-field">
 								<label>Voter ID</label><br />
-								<input class="form-control" type="text" name="id_number" id="id_number" value="<?php echo getRecentId(); ?>" placeholder="Voter ID" required="true" readonly>
+								<input class="form-control" type="text" name="id_number" id="id_number" placeholder="Voter ID" required="true" readonly>
 							</div>
 
 							<div class="form-field">
@@ -83,7 +83,7 @@ include("dbcon.php");
 							<script>
 								setInterval(function() {
 
-									// document.getElementById("id_number").value = <?php echo getRecentId(); ?>
+									// document.getElementById("id_number").value = 
 
 									<?php
 									if (getRecentId() != '') {
