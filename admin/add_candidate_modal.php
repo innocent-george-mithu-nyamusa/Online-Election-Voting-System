@@ -38,13 +38,13 @@
 						<select class="form-control" name="position">
 							<option selected disabled>Select Candidate Group</option>
 							<?php
-							$stmt = $pdo->prepare("SELECT DISTINCT position FROM faculty");
+							$stmt = $pdo->prepare("SELECT * FROM faculty");
 							$stmt->execute();
 							$allValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 							foreach ($allValues as $value) {
 							?>
-								<option value="<?php echo $value["faculty_name"]; ?>"><?php echo $value["faculty_name"]; ?></option>
+								<option value="<?php echo $value["faculty_id"]; ?>"><?php echo $value["faculty_name"]; ?></option>
 
 							<?php
 							}
