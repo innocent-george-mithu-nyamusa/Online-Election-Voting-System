@@ -36,7 +36,7 @@ include("dbcon.php");
 
 							<div class="form-field">
 								<label>Retype Password</label><br />
-								<input class="form-control" type="password" name="password1" id="pass" placeholder="Retype Password" required="true" />
+								<input class="form-control" type="password" name="password1" id="pass-conf" placeholder="Retype Password" required="true" />
 							</div>
 
 							<div class="form-field">
@@ -69,15 +69,19 @@ include("dbcon.php");
 									<?php
 
 									$selectQuery = "SELECT * FROM faculty";
+
 									$items = $conn->query($selectQuery);
-									while ($row = $items->fetch_array()) {
-										echo "<option >" . $row["faculty_name"] . "</option>";
+
+									while ($row = $items->fetch_array()) { ?>
+
+										<option> <?php echo $row["faculty_name"]; ?> </option>
+
+									<?php
+
 									}
 									?>
-
 								</select>
 							</div>
-
 							<br />
 
 							<script>
