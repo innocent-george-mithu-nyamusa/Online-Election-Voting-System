@@ -35,8 +35,8 @@
 
 					<div class="form-group">
 						<label>Faculty</label>
-						<select class="form-control" name="position">
-							<option selected disabled>Select Candidate Group</option>
+						<select class="form-control" name="faculty">
+							<option selected disabled>Select Candidate Faculty</option>
 							<?php
 							$stmt = $pdo->prepare("SELECT * FROM faculty");
 							$stmt->execute();
@@ -54,7 +54,7 @@
 
 					<div class="form-group">
 						<label>Party </label>
-						<select class="form-control" name="position">
+						<select class="form-control" name="party">
 							<option selected disabled>Select Candidate Party</option>
 							<option value="independent">Independent</option>
 							<option value="zicosu">Zicosu</option>
@@ -107,6 +107,7 @@
 			if (isset($_POST['save'])) {
 				$position = $_POST['position'];
 				$party = $_POST['party'];
+				$faculty = $_POST['faculty'];
 				$firstname = $_POST['firstname'];
 				$lastname = $_POST['lastname'];
 				$age = $_POST['Age'];
@@ -119,7 +120,7 @@
 				$location = "upload/" . $_FILES["image"]["name"];
 
 
-				$conn->query("INSERT INTO candidate(position,party,firstname,lastname,Age,gender,img)values('$position','$party','$firstname','$lastname','$age','$gender','$location')") or die($conn->error);
+				$conn->query("INSERT INTO candidate(position,party,firstname,lastname,Age,gender,img,faculty)values('$position','$party','$firstname','$lastname','$age','$gender','$location', '$faculty')") or die($conn->error);
 			}
 			?>
 		</div>
