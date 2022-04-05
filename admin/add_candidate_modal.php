@@ -25,13 +25,33 @@
 
 							foreach ($allValues as $value) {
 							?>
-								<option><?php echo $value["position"]; ?></option>
+								<option value="<?php echo $value["position"]; ?>"><?php echo $value["position"]; ?></option>
 
 							<?php
 							}
 							?>
 						</select>
 					</div>
+
+					<div class="form-group">
+						<label>Faculty</label>
+						<select class="form-control" name="position">
+							<option selected disabled>Select Candidate Group</option>
+							<?php
+							$stmt = $pdo->prepare("SELECT DISTINCT position FROM faculty");
+							$stmt->execute();
+							$allValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+							foreach ($allValues as $value) {
+							?>
+								<option value="<?php echo $value["faculty_name"]; ?>"><?php echo $value["faculty_name"]; ?></option>
+
+							<?php
+							}
+							?>
+						</select>
+					</div>
+
 					<div class="form-group">
 						<label>Party </label>
 						<select class="form-control" name="position">
