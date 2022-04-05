@@ -24,7 +24,7 @@ include("dbconn.php");
 							</div>
 							<div class="form-field">
 								<label>Voter ID</label><br />
-								<input class="form-control" type="text" name="id_number" placeholder="Voter ID" required="true">
+								<input class="form-control" type="text" name="id_number" id="id_number" value="<?php echo getRecentId(); ?>" placeholder="Voter ID" required="true" readonly>
 							</div>
 
 							<div class="form-field">
@@ -80,10 +80,12 @@ include("dbconn.php");
 
 							<script>
 								setInterval(function() {
+
+									document.getElementById("id_number").value = <?php echo getRecentId(); ?>
+
 									<?php
 									if (getRecentId() != '') {
-
-										echo  '<center><button name = "save" type="submit">Proceed Next</button></center>';
+										echo  '<center><button name = "save" type="submit" >Proceed Next</button></center>';
 									} else {
 										echo '<center><button disabled="true" >Waiting to</button></center>';
 									}
