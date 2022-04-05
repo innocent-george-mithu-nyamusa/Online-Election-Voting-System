@@ -64,7 +64,7 @@ include("dbcon.php");
 							</div>
 
 							<div class="form-field">
-								<label>Gender</label> <br />
+								<label>Faculty</label> <br />
 								<select class="form-control" name="faculty">
 									<?php
 
