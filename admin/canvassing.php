@@ -30,11 +30,11 @@
                         <select name="position" id="position" class="form-control pull-left" style="width:300px;margin-left:19px; ">
                             <option readonly>----Sort by Position----</option>
                             <option></option>
-                            <option value="finance_director">Finance Director</option>
-                            <option value="chairman">Chairman</option>
-                            <option value="secretary">Secretary</option>
-                            <option value="secretary_general">Secretary General</option>
-                            <option value="president">President</option>
+                            <option>Finance Director</option>
+                            <option>Chairman</option>
+                            <option>Secretary</option>
+                            <option>Secretary General</option>
+                            <option>President</option>
 
                         </select>
 
