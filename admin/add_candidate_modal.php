@@ -18,18 +18,11 @@
 						<label>Position</label>
 						<select class="form-control" name="position">
 							<option selected disabled>Select Candidate Group</option>
-							<?php
-							$stmt = $pdo->prepare("SELECT DISTINCT position FROM candidate");
-							$stmt->execute();
-							$allValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-							foreach ($allValues as $value) {
-							?>
-								<option value="<?php echo $value["position"]; ?>"><?php echo $value["position"]; ?></option>
-
-							<?php
-							}
-							?>
+							<option value="finance_director">Finance Director</option>
+							<option value="chairman">Chairman</option>
+							<option value="secretary">Secretary</option>
+							<option value="secretary_general">Secretary General</option>
+							<option value="president">President</option>
 						</select>
 					</div>
 
