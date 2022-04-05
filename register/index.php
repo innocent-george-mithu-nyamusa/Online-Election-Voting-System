@@ -68,12 +68,15 @@ include("dbcon.php");
 								<select class="form-control" name="faculty">
 									<?php
 
-									$getQuery = $conn->query("SELECT * FROM faculty");
-									print_r($getQuery);
+									$getQueryStmt = $pdo->prepare("SELECT * FROM faculty");
+									$getQueryStmt->execute();
+									$allItems = $getQueryStmt->fetchAll(PDO::FETCH_ASSOC);
 
-									while ($row = $getQuery->fetch_array()) { ?>
+									print_r($allItems);
 
-										<option> <?php echo $row["faculty_name"]; ?> </option>
+									foreach ($allItems as $item) { ?>
+
+										<option> <?php echo $item["faculty_name"]; ?> </option>
 
 									<?php
 
