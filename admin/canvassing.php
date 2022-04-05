@@ -139,7 +139,7 @@
                             </thead>
                             <?php
                             require 'dbcon.php';
-                            $query = $conn->query("SELECT * FROM candidate WHERE position = 'chairperson'");
+                            $query = $conn->query("SELECT * FROM candidate WHERE position = 'chairman'");
                             while ($fetch = $query->fetch_array()) {
                                 $id = $fetch['candidate_id'];
                                 $query1 = $conn->query("SELECT COUNT(*) as total FROM `votes` WHERE candidate_id = '$id'");
