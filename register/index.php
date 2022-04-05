@@ -69,7 +69,9 @@ include("dbcon.php");
 									<?php
 
 									$getQuery = $conn->query("SELECT * FROM faculty");
-									while ($row = $getQuery->fetch_assoc()) { ?>
+									print_r($getQuery);
+
+									while ($row = $getQuery->fetch_array()) { ?>
 
 										<option> <?php echo $row["faculty_name"]; ?> </option>
 
