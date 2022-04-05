@@ -71,7 +71,7 @@ include("dbcon.php");
 									$selectQuery = "SELECT * FROM faculty";
 									$items = $conn->query($selectQuery);
 									while ($row = $items->fetch_array()) {
-										echo "<option >" . $item["faculty_name"] . "</option>";
+										echo "<option >" . $row["faculty_name"] . "</option>";
 									}
 									?>
 
