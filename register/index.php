@@ -83,21 +83,19 @@ include("dbcon.php");
 								</select>
 							</div>
 							<br />
-
 							<script>
 								setInterval(function() {
 
-									document.getElementById("id_number").value = <?php echo getRecentId(); ?>
-
 									<?php
+
 									if (getRecentId() != '') {
 										echo  '<center><button name = "save" type="submit" >Proceed Next</button></center>';
 									} else {
 										echo '<center><button disabled="true" >Waiting to</button></center>';
 									}
-
 									?>
-								}, 10000)
+
+								}, 1000);
 							</script>
 
 							<!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
