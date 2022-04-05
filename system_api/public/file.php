@@ -1,5 +1,5 @@
 <?php
-require '../src/config/db.php';
+require  __DIR__ . '/../src/config/db.php';
 
 $fingeprint;
 $db = new db();
