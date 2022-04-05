@@ -64,20 +64,20 @@ include("dbcon.php");
 
 							</div>
 
-							<div class="form-field">
+							<!-- <div class="form-field">
 								<label>Gender</label> <br />
-								<select class="form-control" name="faculty">
-									<?php
-									$selectQuery = "SELECT * FROM faculty";
-									$items = $conn->query($selectQuery);
-									foreach ($items as $item) {
-										echo "<option >" . $item["faculty_name"] . "</option>";
-									}
-									?>
-									<option>Male</option>
-									<option>Female</option>
-								</select>
-							</div>
+								<select class="form-control" name="faculty"> -->
+							<?php
+							// $selectQuery = "SELECT * FROM faculty";
+							// $items = $conn->query($selectQuery);
+							// foreach ($items as $item) {
+							// 	echo "<option >" . $item["faculty_name"] . "</option>";
+							// }
+							?>
+							<!-- // 		<option>Male</option>
+							// 		<option>Female</option>
+							// 	</select>
+							// </div> -->
 
 							<br />
 
