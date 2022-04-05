@@ -7,10 +7,10 @@ $stmt = $pdo->prepare("SELECT temp_id FROM temp");
 $allResults = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-echo $allResults["temp_id"][0];
+echo $allResults[0]["temp_id"];
 
-if (isset($allResults["temp_id"][0])) {
-    echo $allResults["temp_id"][0];
+if (isset($allResults[0]["temp_id"])) {
+    echo $allResults[0]["temp_id"];
 } else {
     // echo "null";
 }
