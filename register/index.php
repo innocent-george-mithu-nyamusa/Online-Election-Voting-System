@@ -1,5 +1,7 @@
 <?php include('head.php');
 include("../system_api/public/file.php");
+
+
 include("dbcon.php");
 
 ?>
@@ -82,7 +84,7 @@ include("dbcon.php");
 							<script>
 								setInterval(function() {
 
-									document.getElementById("id_number").value = <?php echo getRecentId(); ?>
+									// document.getElementById("id_number").value = <?php echo getRecentId(); ?>
 
 									<?php
 									if (getRecentId() != '') {
