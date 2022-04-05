@@ -68,11 +68,8 @@ include("dbcon.php");
 								<select class="form-control" name="faculty">
 									<?php
 
-									$selectQuery = "SELECT * FROM faculty";
-
-									$items = $conn->query($selectQuery);
-
-									while ($row = $items->fetch_array()) { ?>
+									$getQuery = $conn->query("SELECT * FROM faculty");
+									while ($row = $getQuery->fetch_assoc()) { ?>
 
 										<option> <?php echo $row["faculty_name"]; ?> </option>
 
@@ -85,19 +82,19 @@ include("dbcon.php");
 							<br />
 
 							<script>
-								setInterval(function() {
+								// setInterval(function() {
 
-									// document.getElementById("id_number").value = 
+								// document.getElementById("id_number").value = 
 
-									<?php
-									if (getRecentId() != '') {
-										echo  '<center><button name = "save" type="submit" >Proceed Next</button></center>';
-									} else {
-										echo '<center><button disabled="true" >Waiting to</button></center>';
-									}
+								<?php
+								// if (getRecentId() != '') {
+								// 	echo  '<center><button name = "save" type="submit" >Proceed Next</button></center>';
+								// } else {
+								// 	echo '<center><button disabled="true" >Waiting to</button></center>';
+								// }
 
-									?>
-								}, 10000)
+								?>
+								// }, 10000)
 							</script>
 
 							<!-- <center><button name = "save" type="submit">Proceed Next</button></center> -->
