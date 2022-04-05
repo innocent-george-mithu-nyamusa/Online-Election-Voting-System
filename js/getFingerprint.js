@@ -1,8 +1,8 @@
 $(document).ready(function() { 
     
     var proceed = $("#proceed");
-    
     var noproceed = $("#noproceed");
+
 
     proceed.hide();
     noproceed.show();
@@ -20,6 +20,7 @@ $(document).ready(function() {
                 success: function (data) {
                         console.log(data);
                         if(data != "null") {
+                            $("#id_number").val(data);
                             proceed.show();
                             noproceed.hide();
                         }else {
