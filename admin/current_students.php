@@ -16,9 +16,6 @@
                 <a href="add_student_id.php" class="btn btn-success btn-outline"><i class="glyphicon glyphicon-save"></i> Add Voter ID</a>	
                
 				<hr/>
-                
-                
-                
 				
                     <div class="panel panel-default">
                         
