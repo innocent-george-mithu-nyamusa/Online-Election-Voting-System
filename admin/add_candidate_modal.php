@@ -33,8 +33,8 @@
 						</select>
 					</div>
 					<div class="form-group">
+						<label>Party </label>
 						<select class="form-control" name="position">
-							<label>Party </label>
 							<option selected disabled>Select Candidate Party</option>
 							<option value="independent">Independent</option>
 							<option value="zicosu">Zicosu</option>
