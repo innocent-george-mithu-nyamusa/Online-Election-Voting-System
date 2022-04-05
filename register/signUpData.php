@@ -2,6 +2,8 @@
 require 'dbcon.php';
 
 if (isset($_POST['save'])) {
+
+
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
 	$gender = $_POST['gender'];
@@ -12,6 +14,7 @@ if (isset($_POST['save'])) {
 	$date = date("Y-m-d H:i:s");
 
 
+	$removeAllTemporaryId = $conn->query("DELETE FROM temp") or die($conn->error);
 	$query = $conn->query("SELECT * FROM voters WHERE id_number='$id_number'") or die($conn->error);
 
 	$count1 = $query->fetch_array();

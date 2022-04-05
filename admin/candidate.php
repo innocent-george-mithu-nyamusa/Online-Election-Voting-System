@@ -1,12 +1,18 @@
 <?php include ('session.php');?>
 <?php include ('head.php');?>
 
+<?php 
+ include ("../system_api/public/file.php");
+
+ 
+?>
+
 <body>
 
     <div id="wrapper">
 
         <!-- Navigation -->
-        <?php include ('side_bar.php');?>
+        <?php include ('side_bar.php'); ?>
 
         <!-- Page Content -->
         <div id="page-wrapper">
