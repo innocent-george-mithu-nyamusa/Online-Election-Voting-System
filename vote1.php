@@ -1,11 +1,11 @@
-<?php include ('head.php');?>
+<?php include('head.php'); ?>
 
 <body>
 
     <div id="wrapper">
 
 
-        <?php include ('view_banner.php');?>
+        <?php include('view_banner.php'); ?>
 
         <div id="page-wrapper">
 
@@ -14,10 +14,16 @@
                     <select onchange="page(this.value)">
                         <option disabled selected>Select Candidate Group</option>
                         <option value="pm_vote.php" name="pm">
-                            Prime Minister
+                            President
                         </option>
-                        <option value="cm_vote.php">Chief Minister</option>
-                        <option value="mla_vote.php">MLA</option>
+                        <option value="finance.php" name="pm">
+                            Finance Director
+                        </option>
+                        <option value="chairman.php" name="pm">
+                            Chairman
+                        </option>
+                        <option value="cm_vote.php">Secretary General</option>
+                        <option value="mla_vote.php">Independent</option>
                     </select>
                 </center>
 
@@ -27,15 +33,14 @@
 
     </div>
     <!-- /#wrapper -->
-    <?php    
-        include ('footer.php');
-        ?>
+    <?php
+    include('footer.php');
+    ?>
 
     <script>
         function page(src) {
             window.location = src;
         }
-
     </script>
 
 </body>
