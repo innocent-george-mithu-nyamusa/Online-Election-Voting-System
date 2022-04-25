@@ -12,7 +12,7 @@
 				<div class="panel-heading" style="background-color: #166961;">
 					<center>MLA</center>
 				</div>
-				<div class="panel-body" style="background-color:;">
+				<div class="panel-body" style="background-color:none;">
 					<?php
 					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'independent'") or die(mysqli_errno());
 					while ($fetch = $query->fetch_array()) {
