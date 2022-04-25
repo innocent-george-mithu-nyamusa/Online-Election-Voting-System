@@ -65,6 +65,7 @@ include("../system_api/public/file.php");
                                         require 'dbcon.php';
                                         $bool = false;
                                         $query = $conn->query("SELECT * FROM candidate ORDER BY candidate_id DESC");
+
                                         while ($row = $query->fetch_array()) {
                                             $candidate_id = $row['candidate_id'];
                                         ?>
@@ -76,6 +77,7 @@ include("../system_api/public/file.php");
                                                 $factQuery = $conn->query("SELECT faculty_name FROM faculty WHERE faculty_id={$row['faculty']}");
                                                 $items = $factQuery->fetch_assoc();
                                                 echo $items["faculty_name"];
+
                                                 ?>
                                             </td>
                                             <td><?php echo $row['party']; ?></td>

@@ -35,7 +35,7 @@
 
 							$stmt = $conn->query("SELECT * FROM faculty");
 
-							while ($alue = $stmt->fetch_array()) {
+							while ($value = $stmt->fetch_array()) {
 							?>
 								<option value="<?php echo $value["faculty_id"]; ?>"><?php echo $value["faculty_name"]; ?></option>
 
