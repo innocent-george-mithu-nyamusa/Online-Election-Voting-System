@@ -10,11 +10,11 @@
 		<div class="col-lg-6">
 			<div class="panel panel-primary">
 				<div class="panel-heading" style="background-color: #166961;">
-					<center>MLA</center>
+					<center>Secretary</center>
 				</div>
 				<div class="panel-body" style="background-color:none;">
 					<?php
-					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'independent'") or die(mysqli_errno());
+					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'secretary'") or die(mysqli_errno());
 					while ($fetch = $query->fetch_array()) {
 					?>
 						<div id="position">

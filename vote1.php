@@ -22,8 +22,12 @@
                         <option value="chairman.php" name="pm">
                             Chairman
                         </option>
-                        <option value="cm_vote.php">Secretary General</option>
-                        <option value="mla_vote.php">Independent</option>
+                        <option value="cm_vote.php">
+                            Secretary General
+                        </option>
+                        <option value="mla_vote.php">
+                            Secretary
+                        </option>
                     </select>
                 </center>
 
