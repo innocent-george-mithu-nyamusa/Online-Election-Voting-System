@@ -21,6 +21,7 @@ $pdo = $db->connect();
             <heading class="menue-select">
                 <center>
                     <select onchange="page(this.value)">
+                        <option disabled selected>Select Candidate Group</option>
                         <option value="candidates/pm.php">
                             President
                         </option>
