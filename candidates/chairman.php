@@ -15,19 +15,19 @@
                     <center>
                         <select onchange="page(this.value)">
                             <option disabled selected>Select Candidate Group</option>
-                            <option value="pm_vote.php" name="pm">
-                                President
+                            <option disabled selected>
+                                Chairman
                             </option>
                             <option value="finance.php" name="pm">
                                 Finance Director
                             </option>
-                            <option value="chairman.php" name="pm">
-                                Chairman
+                            <option value="pm.php" name="pm">
+                                President
                             </option>
-                            <option value="cm_vote.php">
+                            <option value="cm_vote.php" name="pm">
                                 Secretary General
                             </option>
-                            <option disabled selected>
+                            <option value="mla_vote.php" name="pm">
                                 Secretary
                             </option>
                         </select>
