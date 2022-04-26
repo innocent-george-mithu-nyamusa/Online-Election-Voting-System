@@ -8,7 +8,7 @@
             <li>
                 <a href="../index.php">Home</a>
             </li>
-            <li><a href="../view.php">Candidates</a></li>
+            <li><a href="../candidate_path.php">Candidates</a></li>
 
             <li><a href="../register/index.php">Register</a></li>
             <li><a href="../voters.php">Voter List</a></li>
