@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background-color:#166961">
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom:0; background-color:#40AFF8">
     <div class="navbar-header">
         <a class="navbar-brand" href="" style="color:white; padding-left:25px;"><i class="fa fa-home fa-large"> </i>HOME | OVS - Src Fingreprint Voting System</a>
 

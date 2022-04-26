@@ -1,4 +1,4 @@
-<div class="side-bar" style="background-color:#166961; font-size:25px; text-align:center; margin-top:-10px; padding-top:20px;">
+<div class="side-bar" style="background-color:#40AFF8; font-size:25px; text-align:center; margin-top:-10px; padding-top:20px;">
 
     <a style="color:white; font-weight:bold; font-size:25px;">Src Fingerprint Voting System </a>
     </a>

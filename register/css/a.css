@@ -13,7 +13,7 @@ form{
 	font-style: italic;
 }
 .link a:hover{
-	color: #166961;
+	color: #40AFF8;
 }
 .form-panel{
 	background-color:;
@@ -23,7 +23,7 @@ form{
 }
 .form-heading{
 	font-weight: bold;
-	background-color:#166961 
+	background-color:#40AFF8 
 	font-size: 20px;
 	color: white;
 	border-top-right-radius: 10px;
@@ -37,7 +37,7 @@ form{
 .form-field{
 }
 label{
-	color: #166961;
+	color: #40AFF8;
 	font-style: italic;
 	font-weight: bold;
 }
@@ -47,19 +47,19 @@ button{
 	cursor: pointer;
 	height: 40px;
 	border-style: solid;
-	border-color: #166961;
+	border-color: #40AFF8;
 	border-width: thin;
 	border-radius: 5px;
 
 }
 button:hover{
-	background-color: #166961;
+	background-color: #40AFF8;
 	color: white;
 }
 select{
 	width: 50%;
 	background-color: whitesmoke;
-	color: #166961;
+	color: #40AFF8;
 
 }
 input:hover, select:hover{
@@ -69,7 +69,7 @@ input:hover, select:hover{
 	color: white;
 	text-align: center;
 	padding-bottom: 20px;
-	background-color: #166961;
+	background-color: #40AFF8;
 	font-size: large;
 }
 a{

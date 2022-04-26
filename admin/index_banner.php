@@ -1,4 +1,4 @@
-<div class="side-bar" style="background-color:#166961; font-size:25px; text-align:center; margin-top:-10px; padding-top:20px; padding-bottom:0px;">
+<div class="side-bar" style="background-color:#40AFF8; font-size:25px; text-align:center; margin-top:-10px; padding-top:20px; padding-bottom:0px;">
 
     <a href="#" style="color:white; font-weight:bold; font-size:30px;">Src Fingreprint Voting System</a>
     </a>

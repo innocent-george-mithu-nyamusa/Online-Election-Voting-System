@@ -10,7 +10,7 @@
 		<div class="col-lg-6">
 
 			<div class="panel panel-primary">
-				<div class="panel-heading" style="background-color: #166961;">
+				<div class="panel-heading" style="background-color: #40AFF8;">
 					<center>
 						President</center>
 				</div>
@@ -38,7 +38,7 @@
 
 		<hr />
 
-		<center><button class="btn btn-success ballot" type="submit" name="submit" style="background-color: #166961;">Submit Ballot</button></center>
+		<center><button class="btn btn-success ballot" type="submit" name="submit" style="background-color: #40AFF8;">Submit Ballot</button></center>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	</form>
 
