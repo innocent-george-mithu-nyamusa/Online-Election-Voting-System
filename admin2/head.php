@@ -1,7 +1,7 @@
   <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 
-<head>
+  <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NEW ADMIN</title>
+    <title>Adminstration Dashboard</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Default Layout -->
-	<link href="css/style.css" rel="stylesheet">
+
+    <!-- Default Layout -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -28,4 +28,4 @@
     <link rel="stylesheet" type="text/css" href="css/b.css">
 
 
-</head>
+  </head>
