@@ -15,9 +15,21 @@
                     <center>
                         <select onchange="page(this.value)">
                             <option disabled selected>Select Candidate Group</option>
-                            <option value="pm.php">Prime Minister</option>
-                            <option value="cm.php">Chief Minister</option>
-                            <option disabled selected>MLA</option>
+                            <option value="pm_vote.php" name="pm">
+                                President
+                            </option>
+                            <option value="finance.php" name="pm">
+                                Finance Director
+                            </option>
+                            <option value="chairman.php" name="pm">
+                                Chairman
+                            </option>
+                            <option value="cm_vote.php">
+                                Secretary General
+                            </option>
+                            <option disabled selected>
+                                Secretary
+                            </option>
                         </select>
                     </center>
 
