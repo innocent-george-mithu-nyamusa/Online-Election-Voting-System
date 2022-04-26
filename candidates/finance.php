@@ -11,13 +11,13 @@
 
             <heading class="voters_heading">
                 <center>
-                    <h1>Registered Prime Minister Candidates</h1>
+                    <h1>Finance Director Candidates</h1>
                     <center>
                         <select onchange="page(this.value)">
                             <option disabled selected>Select Candidate Group</option>
-                            <option disabled selected>Prime Minister</option>
-                            <option value="cm.php">Chief Minister</option>
-                            <option value="mla.php">MLA</option>
+                            <option disabled selected>Finance Director</option>
+                            <option value="cm.php">President</option>
+                            <option value="mla.php">Secretary</option>
                         </select>
                     </center>
 

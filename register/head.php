@@ -6,7 +6,7 @@ Email: charlesmukupa@gmail.com
 Date: 15 - 08 - 2018
 Fina Year Project - Information Systems Technology
 University Of Lusaka 
-Online Voting System
+Src Fingreprint Voting System
 
 -->
 <html lang="en">
@@ -19,14 +19,14 @@ Online Voting System
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>  Voting | Register</title>
+    <title> Voting | Register</title>
 
     <link rel="stylesheet" type="text/css" href="css/a.css">
-    	   <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Default Layout -->
-	<link href="css/style.css" rel="stylesheet">
+
+    <!-- Default Layout -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -36,6 +36,6 @@ Online Voting System
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
+
 
 </head>
