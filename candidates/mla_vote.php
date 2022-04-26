@@ -11,15 +11,15 @@
 
             <heading class="voters_heading">
                 <center>
-                    <h1>Finance Director Candidates</h1>
+                    <h1>Registered Secretary Candidates</h1>
                     <center>
                         <select onchange="page(this.value)">
                             <option disabled selected>Select Candidate Group</option>
                             <option disabled selected>
-                                Finance Director
+                                Secretary
                             </option>
-                            <option value="cm.php" name="pm">
-                                Secretary General
+                            <option value="finance.php" name="pm">
+                                Finance Director
                             </option>
                             <option value="chairman.php" name="pm">
                                 Chairman
@@ -67,7 +67,7 @@
                                     <?php
                                     require '../admin/dbcon.php';
                                     $bool = false;
-                                    $query = $conn->query("SELECT * FROM candidate WHERE `position` = 'finance_director'");
+                                    $query = $conn->query("SELECT * FROM candidate WHERE `position` = 'secretary'");
                                     while ($row = $query->fetch_array()) {
                                         $candidate_id = $row['candidate_id'];
                                     ?>
