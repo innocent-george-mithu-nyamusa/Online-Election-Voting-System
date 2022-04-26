@@ -11,7 +11,7 @@
 
             <heading class="voters_heading">
                 <center>
-                    <h1>Registered MLA Candidates</h1>
+                    <h1>Registered Chairperson Candidates</h1>
                     <center>
                         <select onchange="page(this.value)">
                             <option disabled selected>Select Candidate Group</option>
@@ -70,7 +70,7 @@
                                         <?php
                                         require '../admin/dbcon.php';
                                         $bool = false;
-                                        $query = $conn->query("SELECT * FROM candidate WHERE `position` = 'secretary'");
+                                        $query = $conn->query("SELECT * FROM candidate WHERE `position` = 'chairman'");
                                         while ($row = $query->fetch_array()) {
                                             $candidate_id = $row['candidate_id'];
                                         ?>
