@@ -14,14 +14,14 @@ Profession: BSc. Information Systems Technology
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>E-Voting</title>
+    <title>Src Fingerprint Voting System</title>
     <link rel="stylesheet" type="text/css" href="css/a.css">
-    <link  rel="icon" href="img/12.png">
-    	   <!-- Bootstrap Core CSS -->
+    <link rel="icon" href="img/12.png">
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Default Layout -->
-	<link href="css/style.css" rel="stylesheet">
+
+    <!-- Default Layout -->
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
     <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
@@ -31,9 +31,8 @@ Profession: BSc. Information Systems Technology
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-	
-</head
-<?php
-include ('script.php');
-?>
+
+
+</head <?php
+        include('script.php');
+        ?>

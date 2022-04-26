@@ -3,6 +3,7 @@
 
 <body>
 	<?php include 'side_bar.php'; ?>
+
 	<div id="wrapper">
 	</div>
 	<form method="POST" action="pm_vote_result.php">

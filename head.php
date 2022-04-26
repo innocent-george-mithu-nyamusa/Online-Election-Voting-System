@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>OVS | Src Fingreprint Voting System</title>
+    <title>Src Fingreprint Voting System</title>
     <link rel="stylesheet" type="text/css" href="css/a.css" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
