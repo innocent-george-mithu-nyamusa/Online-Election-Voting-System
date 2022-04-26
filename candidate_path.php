@@ -22,17 +22,21 @@ $pdo = $db->connect();
                 <center>
                     <select onchange="page(this.value)">
                         <option disabled selected>Select Candidate Group</option>
-                        <?php
-                        $stmt = $pdo->prepare("SELECT DISTINCT position FROM candidate");
-                        $stmt->execute();
-                        $allValues = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-                        foreach ($allValues as $value) {
-                        ?>
-                            <option value="candidates/pm.php"><?php echo $value["position"] ?></option>
-                        <?php
-                        }
-                        ?>
+                        <option value="pm.php" value="pm">
+                            President
+                        </option>
+                        <option value="finance.php" name="pm">
+                            Finance Director
+                        </option>
+                        <option value="chairman.php" name="pm">
+                            Chairman
+                        </option>
+                        <option value="cm_vote.php">
+                            Secretary General
+                        </option>
+                        <option value="mla_vote.php">
+                            Secretary
+                        </option>
                         <!-- <option value="candidates/pm.php">Prime Minister</option>
                         <option value="candidates/cm.php">Chief Minister</option>
                         <option value="candidates/mla.php">MLA</option> -->
@@ -54,8 +58,8 @@ $pdo = $db->connect();
             window.location = src;
         }
     </script>
-    
-    
+
+
 
 </body>
 
