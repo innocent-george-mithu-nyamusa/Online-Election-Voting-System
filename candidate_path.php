@@ -21,20 +21,19 @@ $pdo = $db->connect();
             <heading class="menue-select">
                 <center>
                     <select onchange="page(this.value)">
-                        <option disabled selected>Select Candidate Group</option>
-                        <option value="pm.php" value="pm">
+                        <option value="candidates/pm.php">
                             President
                         </option>
-                        <option value="finance.php" name="pm">
+                        <option value="candidates/finance.php" name="pm">
                             Finance Director
                         </option>
-                        <option value="chairman.php" name="pm">
+                        <option value="candidates/chairman.php" name="pm">
                             Chairman
                         </option>
-                        <option value="cm_vote.php">
+                        <option value="candidates/cm_vote.php">
                             Secretary General
                         </option>
-                        <option value="mla_vote.php">
+                        <option value="candidates/mla_vote.php">
                             Secretary
                         </option>
                         <!-- <option value="candidates/pm.php">Prime Minister</option>
