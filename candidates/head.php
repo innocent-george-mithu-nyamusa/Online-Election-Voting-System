@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-Author: Charles Kapiya Mukupa
-Year: 2018
-Profession: BSc. Information Systems Technology 
--->
+
 <html lang="en">
 
 <head>
