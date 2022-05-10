@@ -14,7 +14,7 @@
     }
 </style>
 <div class="text-center text-success animateuse" style="background-color: #40AFF8; font-size:25px;text-align:center; margin-top:-10px; padding-top:20px;">
-    <a style="color:white; font-weight:bold; font-size:30px;">Src Fingreprint Voting System</a>
+    <a style="color:white; font-weight:bold; font-size:30px;">CUT SRC Fingerprint Voting System</a>
 
     <nav class="nav-menue">
         <ul>
