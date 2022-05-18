@@ -12,8 +12,9 @@ if (isset($_POST['login'])) {
 
 	if ($numberOfRows > 0) {
 		session_start();
-		
+
 		$_SESSION['voters_id'] = $row['voters_id'];
+		$_SESSION['reg_number'] =  $_POST['reg_number'];
 		header('location:vote1.php');
 	}
 

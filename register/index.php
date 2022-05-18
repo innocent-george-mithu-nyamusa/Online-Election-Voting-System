@@ -30,6 +30,11 @@ include("dbcon.php");
 							</div>
 
 							<div class="form-field">
+								<label>Reg Number</label><br />
+								<input class="form-control" type="text" name="reg_number" minlength="10" maxlength="10" id="reg_number" placeholder="Reg Number" required="true" />
+							</div>
+
+							<div class="form-field">
 								<label>Password</label><br />
 								<input class="form-control" type="password" name="password" id="pass" placeholder="Password" required="true" />
 							</div>

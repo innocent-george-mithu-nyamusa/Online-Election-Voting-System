@@ -11,6 +11,7 @@ if (isset($_POST['save'])) {
 	$age = $_POST['Age'];
 	$password = $_POST['password'];
 	$password1 = $_POST['password1'];
+	$regnumber = $_POST['reg_number'];
 	$date = date("Y-m-d H:i:s");
 
 
@@ -22,8 +23,8 @@ if (isset($_POST['save'])) {
 
 		if ($password == $password1) {
 			$fullname = $firstname . $lastname;
-			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date')");
-			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date')");
+			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
+			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
 
 ?>
 			<script>

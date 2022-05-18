@@ -38,6 +38,11 @@
                             </div>
 
                             <div class="form-field">
+                                <label for="username">Reg Number: </label><br />
+                                <input class="form-control" placeholder="Enter Voter ID" name="reg_number" type="text" required="required" minlength="10" maxlength="10" autofocus>
+                            </div>
+
+                            <div class="form-field">
                                 <label for="username">Password: </label>
                                 <input class="form-control" placeholder="Enter Password" name="password" type="password" required="required">
                             </div>
