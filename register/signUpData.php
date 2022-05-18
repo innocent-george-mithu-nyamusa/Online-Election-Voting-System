@@ -20,7 +20,6 @@ if (isset($_POST['save'])) {
 
 	$count1 = $query->fetch_array();
 	if ($count1 == 0) {
-
 		if ($password == $password1) {
 			$fullname = $firstname . $lastname;
 			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");

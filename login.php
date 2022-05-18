@@ -47,7 +47,8 @@
                                 <input class="form-control" placeholder="Enter Password" name="password" type="password" required="required">
                             </div>
                             <br />
-                            <center><button class="btn btn-lg btn-block btn-success" name="login" style="margin-bottom:0px;background-color: #40AFF8;" width="50">Login</button>
+                            <center>
+                                <button class="btn btn-lg btn-block btn-success" name="login" style="margin-bottom:0px;background-color: #40AFF8;" width="50">Login</button>
                                 &nbsp;
                                 <a href="register/index.php"><button type="button" class="btn btn-lg btn-success btn-block" data-dismiss="modal" style="margin-bottom:0px;background-color: #40AFF8;">Register</button></a>
 

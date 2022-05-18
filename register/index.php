@@ -26,7 +26,7 @@ include("dbcon.php");
 							</div>
 							<div class="form-field">
 								<label>Voter ID</label><br />
-								<input class="form-control" type="text" name="id_number" id="id_number" required="true" readonly>
+								<input class="form-control" type="text" name="id_number" id="id_number" required readonly>
 							</div>
 
 							<div class="form-field">
@@ -36,22 +36,22 @@ include("dbcon.php");
 
 							<div class="form-field">
 								<label>Password</label><br />
-								<input class="form-control" type="password" name="password" id="pass" placeholder="Password" required="true" />
+								<input class="form-control" type="password" name="password" id="pass" placeholder="Password" required />
 							</div>
 
 							<div class="form-field">
 								<label>Retype Password</label><br />
-								<input class="form-control" type="password" name="password1" id="pass-conf" placeholder="Retype Password" required="true" />
+								<input class="form-control" type="password" name="password1" id="pass-conf" placeholder="Retype Password" required />
 							</div>
 
 							<div class="form-field">
 								<label>First Name</label><br />
-								<input class="form-control" type="text" name="firstname" placeholder="First Name" required="true">
+								<input class="form-control" type="text" name="firstname" placeholder="First Name" required>
 							</div>
 
 							<div class="form-field">
 								<label>Last Name</label><br />
-								<input class="form-control" type="text" name="lastname" placeholder="Last Name" required="true">
+								<input class="form-control" type="text" name="lastname" placeholder="Last Name" required>
 							</div>
 
 							<div class="form-field">
