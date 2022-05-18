@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-Author: Charles Kapiya Mukupa
-Year: 2018
-Profession: BSc. Information Systems Technology 
--->
+
 <html lang="en">
 
 <head>
@@ -14,7 +10,7 @@ Profession: BSc. Information Systems Technology
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Src Fingerprint Voting System</title>
+    <title>CUT Src Fingerprint Voting System</title>
     <link rel="stylesheet" type="text/css" href="css/a.css">
     <link rel="icon" href="img/12.png">
     <!-- Bootstrap Core CSS -->
