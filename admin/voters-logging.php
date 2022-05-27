@@ -11,7 +11,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header">Current Registered Voters</h3>
+                    <h3 class="page-header">Voters Logging</h3>
 				<a href="download.php" class="btn btn-success btn-outline"><i class="glyphicon glyphicon-save"></i> Import Voters Data</a>
                 <a href="add_student_id.php" class="btn btn-success btn-outline"><i class="glyphicon glyphicon-save"></i> Add Voter ID</a>	
                
@@ -26,26 +26,28 @@
                                         <tr>
                                          
                                             <th>Voter ID</th>
-                                            <th>Names</th>
-                                            <th>Year Registered</th>
-                                            
+                                            <th>Purpose </th>
+                                            <th>Candidate Id</th>
+                                            <th>Voters Id</th>
+                                            <th>Vote Changed At</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 										<?php 
 											require 'dbcon.php';
 											
-											$query = $conn->query("SELECT * FROM ids ORDER BY id_number DESC");
+											$query = $conn->query("SELECT * FROM updated_votes ORDER BY vote_changed_at DESC");
 											while($row1 = $query->fetch_array()){
 											$voters_id=$row1['id_number'];
 										?>
                                       
 											<tr>
-												<td><?php echo $row1 ['id_number'];?></td>
-												<td><?php echo $row1 ['names'];?></td>
-												<td><?php echo $row1 ['started'];?></td>		
+												<td><?php echo $row1 ['vote_id'];?></td>
+												<td><?php echo $row1 ['vote_update_purpose'];?></td>
+												<td><?php echo $row1 ['candidate_id'];?></td>
+												<td><?php echo $row1 ['voters_id'];?></td>
+												<td><?php echo $row1 ['voter_changed_at'];?></td>
 											</tr>
-										
                                        <?php } ?>
                                     </tbody>
                                 </table>

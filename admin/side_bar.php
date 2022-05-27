@@ -38,13 +38,19 @@
 						<li>
                           <a href="voters.php"><i class = "fa fa-user fa-fw"></i> View Voters</a>
                         </li>
+
                         <li>
                           <a href="current_students.php"><i class = "fa fa-user fa-fw"></i>Registered Voters</a>
+                        </li>
+
+                        <li>
+                          <a href="voters-logging.php"><i class = "fa fa-user fa-fw"></i>Votes Logging</a>
                         </li>
 						
                         <li>
                             <a href="canvassing.php"><i class="fa fa-download fa-fw"></i>Election Reports</a>
                         </li>
+
                         <li>
                             <a href="user.php"> <i class = "fa fa-users" ></i> View User</a>
                         </li>
