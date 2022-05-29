@@ -19,6 +19,7 @@ if (isset($_POST['login'])) {
     }
 
     echo "the number of rows : ".$numberOfRows;
+    echo "id no : ".$idno;
     if ($numberOfRows > 0) {
         session_start();
 
