@@ -13,7 +13,6 @@ if (isset($_POST['save'])) {
 	$regnumber = $_POST['reg_number'];
 	$date = date("Y-m-d H:i:s");
 
-
 	$removeAllTemporaryId = $conn->query("DELETE FROM temp") or die($conn->error);
 	$query = $conn->query("SELECT * FROM voters WHERE id_number='$id_number'") or die($conn->error);
 
@@ -29,15 +28,15 @@ if (isset($_POST['save'])) {
 			$conn->query("INSERT INTO voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
 ?>
 			<script>
-				// alert('Successfully Registered');
-				// window.location = '../voters.php';
+				alert('Successfully Registered');
+				window.location = '../voters.php';
 			</script>
 		<?php
 		} else {
 		?>
 			<script>
 				alert('Your Passwords Did Not Match');
-				// window.location = 'index.php';
+				window.location = 'index.php';
 			</script>
 		<?php
 		}
@@ -45,7 +44,7 @@ if (isset($_POST['save'])) {
 		?>
 		<script>
 			alert('ID Already Registered');
-			// window.location = '../voters.php';
+			window.location = '../voters.php';
 		</script>
 <?php
 	}
