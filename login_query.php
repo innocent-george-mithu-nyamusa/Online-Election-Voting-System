@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
 			alert('Sorry You Already Voted')
 		</script>
 	<?php
-	} else {
+	} else if ($voted != 0) {
 	?>
 		<script type="text/javascript">
 			alert('Your account is not Activated')
