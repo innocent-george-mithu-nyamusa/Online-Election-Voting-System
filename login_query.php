@@ -2,6 +2,7 @@
 require_once 'admin/dbcon.php';
 
 if (isset($_POST['login'])) {
+
 	$idno = $_POST['idno'];
 	$password = $_POST['password'];
 
@@ -13,16 +14,10 @@ if (isset($_POST['login'])) {
 
     if(is_bool($vote_check)){
         $voted = 0;
+    }else {
+        $voted = $vote_check->num_rows;
     }
 
-	if ($numberOfRows > 0) {
-		session_start();
-
-		$_SESSION['voters_id'] = $row['voters_id'];
-		$_SESSION['reg_number'] =  $_POST['reg_number'];
-
-		header('location:vote1.php');
-	}
 
 	if ($voted == 1) {
 ?>
@@ -37,5 +32,14 @@ if (isset($_POST['login'])) {
 		</script>
 <?php
 	}
+
+    if ($numberOfRows > 0) {
+        session_start();
+
+        $_SESSION['voters_id'] = $row['voters_id'];
+        $_SESSION['reg_number'] =  $_POST['reg_number'];
+
+        header('location: vote1.php');
+    }
 }
 ?>
