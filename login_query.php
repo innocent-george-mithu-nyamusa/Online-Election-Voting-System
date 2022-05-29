@@ -18,6 +18,16 @@ if (isset($_POST['login'])) {
         $voted = $vote_check->num_rows;
     }
 
+    echo "the number of rows : ".$numberOfRows;
+    if ($numberOfRows > 0) {
+        session_start();
+
+        $_SESSION['voters_id'] = $row['voters_id'];
+        $_SESSION['reg_number'] =  $_POST['reg_number'];
+
+        header('location: vote1.php');
+    }
+
 
 	if ($voted == 1) {
 ?>
@@ -33,13 +43,6 @@ if (isset($_POST['login'])) {
 <?php
 	}
 
-    if ($numberOfRows > 0) {
-        session_start();
 
-        $_SESSION['voters_id'] = $row['voters_id'];
-        $_SESSION['reg_number'] =  $_POST['reg_number'];
-
-        header('location: vote1.php');
-    }
 }
 ?>
