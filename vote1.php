@@ -12,6 +12,7 @@ session_start();
 
             <heading class="menue-select">
                 <center>
+
                     <select onchange="page(this.value)">
                         <option disabled selected>Select Candidate Group</option>
                         <?php if (!isset($_SESSION["pm_id"])) { ?>
@@ -19,6 +20,7 @@ session_start();
                                 President
                             </option>
                         <?php } ?>
+
                         <?php if (!isset($_SESSION["cm_id"])) { ?>
                             <option value="finance.php" name="pm">
                                 Finance Director
@@ -36,6 +38,7 @@ session_start();
                                 Secretary General
                             </option>
                         <?php } ?>
+
                         <?php if (!isset($_SESSION["cm_id"])) { ?>
                             <option value="mla_vote.php">
                                 Secretary
