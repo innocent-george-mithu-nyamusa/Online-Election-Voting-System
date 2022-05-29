@@ -15,7 +15,6 @@ if (isset($_POST['login'])) {
         $voted = 0;
     }
 
-
 	if ($numberOfRows > 0) {
 		session_start();
 
