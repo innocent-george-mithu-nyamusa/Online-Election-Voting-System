@@ -38,7 +38,6 @@
 											while($row1 = $query->fetch_array()){
 											$voters_id=$row1['id_number'];
 										?>
-                                      
 											<tr>
 												<td><?php echo $row1 ['vote_id'];?></td>
 												<td><?php echo $row1 ['vote_update_purpose'];?></td>

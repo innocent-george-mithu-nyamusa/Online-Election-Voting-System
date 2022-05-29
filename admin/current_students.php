@@ -24,7 +24,6 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                         
                                             <th>Voter ID</th>
                                             <th>Names</th>
                                             <th>Year Registered</th>
