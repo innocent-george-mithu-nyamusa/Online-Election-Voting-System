@@ -35,7 +35,7 @@ if (isset($_POST['save'])) {
 		?>
 			<script>
 				alert('Your Passwords Did Not Match');
-				window.location = 'index.php';
+				// window.location = 'index.php';
 			</script>
 		<?php
 		}
@@ -43,7 +43,7 @@ if (isset($_POST['save'])) {
 		?>
 		<script>
 			alert('ID Already Registered');
-			window.location = '../voters.php';
+			// window.location = '../voters.php';
 		</script>
 <?php
 	}
