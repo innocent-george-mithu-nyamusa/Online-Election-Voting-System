@@ -18,10 +18,13 @@ if (isset($_POST['save'])) {
 	$query = $conn->query("SELECT * FROM voters WHERE id_number='$id_number'") or die($conn->error);
 
 	$count1 = $query->fetch_array();
-	if ($count1 == 0) {
-		if ($password == $password1) {
+    print_r($count1);
 
+	if ($count1 == 0) {
+        print_r($_POST);
+		if ($password == $password1) {
 			$fullname = $firstname . $lastname;
+            echo $fullname;
 
 			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
 //			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
