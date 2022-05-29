@@ -10,7 +10,11 @@ if (isset($_POST['login'])) {
 
 	$vote_check = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '" . md5($password) . "' && `status` = 'Voted' && `president`= '1' && `secretary`='1' && `secretary_general`='1' && `chairman`='1' && `finance_dierctor`=='1'");
 	$numberOfRows = $result->num_rows;
-    $voted = $vote_check->num_rows;
+
+    if(is_bool($vote_check)){
+        $voted = 0;
+    }
+
 
 	if ($numberOfRows > 0) {
 		session_start();
