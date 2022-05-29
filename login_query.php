@@ -8,8 +8,9 @@ if (isset($_POST['login'])) {
 	$result = $conn->query("SELECT * FROM voters WHERE id_number = '$idno' && password = '" . md5($password) . "' && `account` = 'active' && `status` = 'Unvoted'") or die(mysqli_errno($conn));
 	$row = $result->fetch_array();
 
-	$voted = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '" . md5($password) . "' && `status` = 'Voted' && `president`= '1' && `secretary`='1' && `secretary_general`='1' && `chairman`='1' && `finance_dierctor`=='1'")->num_rows;
+	$vote_check = $conn->query("SELECT * FROM `voters` WHERE id_number = '$idno' && password = '" . md5($password) . "' && `status` = 'Voted' && `president`= '1' && `secretary`='1' && `secretary_general`='1' && `chairman`='1' && `finance_dierctor`=='1'");
 	$numberOfRows = $result->num_rows;
+    $voted = $vote_check->num_rows;
 
 	if ($numberOfRows > 0) {
 		session_start();
