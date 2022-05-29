@@ -1,9 +1,10 @@
 <?php include('head.php'); ?>
-
+<?php
+session_start();
+?>
 <body>
 
     <div id="wrapper">
-
 
         <?php include('view_banner.php'); ?>
 
