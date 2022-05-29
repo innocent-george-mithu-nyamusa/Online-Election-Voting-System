@@ -23,11 +23,10 @@ if (isset($_POST['save'])) {
 			$fullname = $firstname . $lastname;
 
 			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
-			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
-
+//			$conn->query("insert into voters(id_number, password, firstname, lastname, gender, Age, status, date, reg_number) VALUES('$id_number', '" . md5($password) . "','$firstname','$lastname', '$gender', '$age','Unvoted', '$date', '$regnumber')");
 ?>
 			<script>
-				alert('Successfully Registered');
+				// alert('Successfully Registered');
 				// window.location = '../voters.php';
 			</script>
 		<?php
