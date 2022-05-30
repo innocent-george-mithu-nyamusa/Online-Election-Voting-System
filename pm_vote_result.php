@@ -21,6 +21,7 @@
             } else {
                 $_SESSION['mla_id'] = $_POST['mla_id'];
             }
+
             if (!isset($_POST['ch_id'])) {
                 $_SESSION['ch_id'] = "";
             } else {

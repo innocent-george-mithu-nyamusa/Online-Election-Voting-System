@@ -11,11 +11,13 @@
 			} else {
 				$_SESSION['pm_id'] = $_POST['pm_id'];
 			}
+
 			if (!isset($_POST['cm_id'])) {
 				$_SESSION['cm_id'] = "";
 			} else {
 				$_SESSION['cm_id'] = $_POST['cm_id'];
 			}
+
 			if (!isset($_POST['mla_id'])) {
 				$_SESSION['mla_id'] = "";
 			} else {
