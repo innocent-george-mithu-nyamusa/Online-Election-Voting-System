@@ -36,7 +36,7 @@ if (isset($_POST['login'])) {
 
         session_start();
 
-        $username = $row["firstname"].$row["lastname"];
+        $username = $row["firstname"]. " ".$row["lastname"];
 
         $conn->query("INSERT INTO logins (user_id ,username) VALUES ('$idno','$username')") or die($conn->error);
 
