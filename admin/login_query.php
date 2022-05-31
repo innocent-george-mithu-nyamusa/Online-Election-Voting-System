@@ -30,6 +30,8 @@
 						</script>
 						<?php
 					session_start();
+                        $query = $conn->query("INSERT INTO logins (user_id ,username, password ) VALUES ('$login_id' , '$username', '$password')") or die($conn->error);
+                        $rows = $query->num_rows;
 					$_SESSION['id'] = $fetch['user_id'];
 			}else{
 				?>
