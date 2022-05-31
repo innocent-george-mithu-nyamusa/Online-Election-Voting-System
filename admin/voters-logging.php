@@ -36,14 +36,13 @@
 											
 											$query = $conn->query("SELECT * FROM updated_votes ORDER BY vote_changed_at DESC");
 											while($row1 = $query->fetch_array()){
-											$voters_id=$row1['id_number'];
 										?>
 											<tr>
 												<td><?php echo $row1 ['vote_id'];?></td>
 												<td><?php echo $row1 ['vote_update_purpose'];?></td>
 												<td><?php echo $row1 ['candidate_id'];?></td>
 												<td><?php echo $row1 ['voters_id'];?></td>
-												<td><?php echo $row1 ['voter_changed_at'];?></td>
+												<td><?php echo $row1 ['vote_changed_at'];?></td>
 											</tr>
                                        <?php } ?>
                                     </tbody>
