@@ -1,7 +1,7 @@
 <?php
 	require_once 'dbcon.php';
 
-	echo "LOGIN";
+	//echo "LOGIN";
 	
 	if(isset($_POST['login']))
 	{
