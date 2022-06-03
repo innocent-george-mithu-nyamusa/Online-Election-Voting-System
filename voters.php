@@ -62,7 +62,8 @@
 </div>                          
         <?php 
             include ('script.php');
-	     include ('footer.php');
+	   
         ?>                     
 </body>
+  include ('footer.php');
 </html>
