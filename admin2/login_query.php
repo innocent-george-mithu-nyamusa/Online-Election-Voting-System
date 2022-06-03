@@ -25,7 +25,7 @@
 					} 
 				else if ($rows > 0)
 					{
-						echo "edited stuff";
+						echo "LOGIN";
 					$conn->query("INSERT INTO  logins(username) VALUES(' $username');") or die($conn->error);//Inserts username for tracking logs..security feature
 						
 						?>
