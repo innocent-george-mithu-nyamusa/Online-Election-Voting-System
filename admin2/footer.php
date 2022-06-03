@@ -2,5 +2,5 @@
 	<hr />
 	&copy 2022.
 	<br />
-	Src Fingreprint Voting System.
+	CUT SRC Fingerprint Voting System.
 </footer>
