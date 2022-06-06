@@ -1,3 +1,4 @@
+<html>
 <?php include ('head.php');?>
 
 <body>
