@@ -69,4 +69,4 @@
 
   
 </html>
-<?php include('footer.php'); ?>
+
