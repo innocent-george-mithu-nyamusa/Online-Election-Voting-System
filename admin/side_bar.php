@@ -44,7 +44,7 @@
                         </li>
 
                         <li>
-                          <a href="voters-logging.php"><i class = "fa fa-user fa-fw"></i>Votes Logging</a>
+                          <a href="voters-logging.php"><i class = "fa fa-user fa-fw"></i>Votes Tracking</a>
                         </li>
 						
                         <li>
