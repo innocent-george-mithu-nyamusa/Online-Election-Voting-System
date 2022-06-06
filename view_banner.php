@@ -14,8 +14,8 @@
     }
 </style>
  
-<div class="text-center text-success animateuse"  width="70"> style="background-color: #40AFF8; font-size:25px;text-align:center; margin-top:-10px; padding-top:20px;">
-    <img src ="img/logoo.png" <a style="color:white; font-weight:bold; font-size:30px;">   CUT SRC Fingerprint Voting System   <img src ="img/logoo.png" width="70"> </a>
+<div class="text-center text-success animateuse"   style="background-color: #40AFF8; font-size:25px;text-align:center; margin-top:-10px; padding-top:20px;">
+      <img src ="img/logoo.png" width="70"> <a style="color:white; font-weight:bold; font-size:30px;">   CUT SRC Fingerprint Voting System  </a>
 
     <nav class="nav-menue">
         <ul>
