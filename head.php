@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <img src ="img/cutlogo.jfif">
+    <img src ="img/logoo.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 
     <!-- Custom CSS -->
     <link href="css/sb-admin-2.css" rel="stylesheet">
-
+  <img src ="img/logoo.png">
     <!-- Custom Fonts ---->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
