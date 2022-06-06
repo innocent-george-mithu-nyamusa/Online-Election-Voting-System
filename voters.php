@@ -62,7 +62,9 @@
 </div>                          
         <?php 
             include ('script.php');
-	   
+	    
+        include ('footer.php');
+        
         ?>  
 	
 </body>
