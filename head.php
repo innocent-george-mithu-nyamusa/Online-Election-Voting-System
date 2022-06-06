@@ -3,14 +3,14 @@
 <html lang="en">
 
 <head>
-    <img src ="img/logoo.png">
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CUT SRC Fingerprint Voting System</title>
+    <title> <img src ="img/logoo.png"> CUT SRC Fingerprint Voting System</title>
     <link rel="stylesheet" type="text/css" href="css/a.css" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
