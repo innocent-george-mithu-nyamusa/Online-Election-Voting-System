@@ -11,7 +11,7 @@
 	<figure>
 		<img src="img/voting1.png">
 		//<img src="img/voting4.jpg">
-		<img src="img/set.jpg">
+		<img src="img/voting3.jpg">
 		<img src="img/voting2.jpg">
     </figure>
 </div>
