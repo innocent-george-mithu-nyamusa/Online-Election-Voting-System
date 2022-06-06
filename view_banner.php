@@ -13,8 +13,8 @@
         text-decoration: none;
     }
 </style>
- <img src ="img/cutt.jpg" width="90">
-<div class="text-center text-success animateuse"   style="background-color: #40AFF8; font-size:25px;text-align:center; margin-top:-10px; padding-top:20px;">
+ 
+<div class="text-center text-success animateuse"  <img src ="img/cutt.jpg" width="90"> style="background-color: #40AFF8; font-size:25px;text-align:center; margin-top:-10px; padding-top:20px;">
        <a style="color:white; font-weight:bold; font-size:30px;">   CUT SRC Fingerprint Voting System  </a>  <img src ="img/cutt.jpg" width="90">
 
     <nav class="nav-menue">
