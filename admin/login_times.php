@@ -27,7 +27,7 @@
                             <h4 class="modal-title" id="myModalLabel">         
                                                 <div class="panel panel-primary">
                                                     <div class="panel-heading">
-                                                        Systm User Log
+                                                        System User Log
                                                     </div>    
                                                 </div>
                                             </h4>
