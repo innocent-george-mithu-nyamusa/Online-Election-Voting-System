@@ -66,6 +66,7 @@
     <!-- /#wrapper -->
 
     <?php include ('script.php');?>
+	    <?php include ('footer.php');?>
 
 </body>
 
