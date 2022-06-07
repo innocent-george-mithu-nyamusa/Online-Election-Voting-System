@@ -8,7 +8,7 @@
      
     <center>
         <div class="voters_notice">
-            <p><strong><i>NOTE</i>:</strong> if you did not registered for online voting, your name will not appear on list below and
+            <p><strong><i>NOTE</i>:</strong> style="color:red"; if you did not registered for online voting, your name will not appear on list below and
             you can not vote using the online system.</p>
         </div>
         <strong><h3>Registered Voters List</h3></strong>
@@ -23,7 +23,7 @@
                                     <thead class="thead">
                                         <tr>
                                          
-                                            <th>Voter ID</th>
+                                            //<th>Voter ID</th>
                                             <th>Names</th>
                                             <th>Gender</th>
                                             <th>Age</th>
@@ -43,7 +43,7 @@
 										?>
                                       
 											<tr >
-												<td><?php echo $row1 ['id_number'];?></td>
+												//<td><?php echo $row1 ['id_number'];?></td>
 												<td><?php echo $row1 ['firstname']." ". $row1 ['lastname'];?></td>
                                                 <td><?php echo $row1 ['gender'];?></td>
 												<td><?php echo $row1 ['Age'];?></td>
