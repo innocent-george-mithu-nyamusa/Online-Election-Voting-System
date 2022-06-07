@@ -7,7 +7,7 @@
 
      
     <center>
-        <div class="voters_notice">
+        <div class="voters_notice" style="color:red">
             <p><strong><i>NOTE</i>:</strong>  if you did not registered for online voting, your name will not appear on list below and
             you can not vote using the online system.</p>
         </div>
