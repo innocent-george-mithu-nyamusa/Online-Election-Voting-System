@@ -23,7 +23,7 @@
                                     <thead class="thead">
                                         <tr>
                                          
-                                            //<th>Voter ID</th>
+                                            <th>Voter ID</th>
                                             <th>Names</th>
                                             <th>Gender</th>
                                             <th>Age</th>
@@ -43,7 +43,7 @@
 										?>
                                       
 											<tr >
-												//<td><?php echo $row1 ['id_number'];?></td>
+											       <td><?php echo $row1 ['id_number'];?></td>
 												<td><?php echo $row1 ['firstname']." ". $row1 ['lastname'];?></td>
                                                 <td><?php echo $row1 ['gender'];?></td>
 												<td><?php echo $row1 ['Age'];?></td>
