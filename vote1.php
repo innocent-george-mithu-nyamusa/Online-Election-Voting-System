@@ -14,7 +14,7 @@ session_start();
                 <center>
 
                     <select onchange="page(this.value)">
-                        <option disabled selected>Select Candidate Group</option>
+                        <option >Select Candidate Group</option>
 
                         <?php if (!isset($_SESSION["pm_id"])) { ?>
                             <option value="pm_vote.php" name="pm">
