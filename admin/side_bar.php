@@ -39,9 +39,7 @@
                           <a href="voters.php"><i class = "fa fa-user fa-fw"></i> View Voters</a>
                         </li>
 
-                        <li>
-                          <a href="current_students.php"><i class = "fa fa-user fa-fw"></i>Registered Voters</a>
-                        </li>
+
 
                         <li>
                           <a href="voters-logging.php"><i class = "fa fa-user fa-fw"></i>Votes Tracking</a>
