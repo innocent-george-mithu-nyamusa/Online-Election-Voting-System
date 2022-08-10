@@ -53,7 +53,7 @@ session_start();
         <!-- /#page-wrapper -->
 
     </div>
-    <!-- /#wrapper -->
+    <!-- /#wrapper --->
     <?php
     include('footer.php');
     ?>

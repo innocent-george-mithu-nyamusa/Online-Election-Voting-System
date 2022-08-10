@@ -11,7 +11,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h3 class="page-header">Votes Logging</h3>
+                    <h3 class="page-header">Votes Tracking</h3>
                
 				<hr/>
                     <div class="panel panel-default">
@@ -66,6 +66,7 @@
     <!-- /#wrapper -->
 
     <?php include ('script.php');?>
+	    <?php include ('footer.php');?>
 
 </body>
 

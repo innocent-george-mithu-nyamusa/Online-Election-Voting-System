@@ -12,7 +12,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h3 class="page-header">Current Registered Voters</h3>
-				<a href="download.php" class="btn btn-success btn-outline"><i class="glyphicon glyphicon-save"></i> Import Voters Data</a>
+				
                 <a href="add_student_id.php" class="btn btn-success btn-outline"><i class="glyphicon glyphicon-save"></i> Add Voter ID</a>	
                
 				<hr/>
@@ -67,6 +67,7 @@
     <!-- /#wrapper -->
 
     <?php include ('script.php');?>
+    <?php include ('footer.php');?>
 
 </body>
 
