@@ -11,7 +11,7 @@ $(document).ready(function() {
         function() {
         $.ajax(
             {
-                url: "getfingerprint.php",
+                url: "../includes/getFingerprint.php",
                 method: "post",
                 dataType: "text",
                 failed: function (){
@@ -30,7 +30,7 @@ $(document).ready(function() {
                 }
             }
         );
-    }, 1000);
+    }, 100);
 
-
+   
 });
